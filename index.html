@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
-<title>阿嬷手作 · 品控稽核看板</title>
+<title>华南大区｜品控稽核看板</title>
 <style>
   :root{
     --cream:#FBF6EC; --paper:#FFFFFF; --ink:#3A2F28; --muted:#8A7D70; --line:#E7DCCB;
@@ -137,7 +137,7 @@
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <div class="brand">阿嬷手作<small>品控稽核看板 · 2026-08-01 ~ 2026-08-21</small></div>
+  <div class="brand">华南大区｜品控稽核看板<small id="dashboardPeriod">2026-08-01 ~ 2026-08-24</small></div>
   <div class="stat-pills" id="pills"><div class="pill"><b>72</b>报告</div><div class="pill"><b>389</b>问题点</div><div class="pill"><b>1</b>红线</div></div>
 </div></header>
 <div class="wrap">
@@ -319,11 +319,12 @@
 （2）17:03伙伴头发裸露，需加强相互检查，避免头发掉入造成异物风险</td></tr><tr><td class="pt-store">珠海万象汇店</td><td class="pt-cat">线上</td><td class="pt-reason">17:02伙伴制作酒酿米麻薯雪糕，打取酒渍糯米未称量，存在使用量偏差，需加强宣导伙伴称取标准；打取未称量</td></tr><tr><td class="pt-store">珠海万象汇店</td><td class="pt-cat">线上</td><td class="pt-reason">（1）12:07伙伴将处理好的龙眼果肉清洗1遍，标准需反复清洗过滤至少3次至无杂质，需加强宣导伙伴清洗动作规范</td></tr><tr><td class="pt-store">珠海万象汇店</td><td class="pt-cat">线上</td><td class="pt-reason">（1）12:00伙伴制备熟糯米，将乐扣盒使用锡纸密封后，未立即转移至蒸锅上，12:04才与洗好的芋头块一同放入蒸锅内，糯米持续浸泡热水中会导致出锅后的糯米软烂，失去颗粒感，需加强宣导伙伴制备动作标准
 （2）12:01伙伴称取冷冻芋头块1521.5g，标准需称取1500±10g，需加强宣导伙伴称取标准
 （3）14:35伙伴制备混合蜜薯泥，称取冷冻蜜薯块319.9g，标准需称取是300±3g，需加强宣导伙伴称取标准；手作类半成品错误</td></tr></tbody></table></div></div>
-  <div class="foot">数据来源：巡店助手（企业码 amsz）· 由每日自动化任务生成 · 阿嬷手作品控部</div>
+  <div class="foot">数据来源：巡店助手（企业码 amsz）· 由自动化任务生成 · 华南大区品控</div>
 </div>
 <script src="./data/qc-data.js"></script>
 <script>
 const DATA = window.QC_DATA;
+document.getElementById('dashboardPeriod').textContent=(DATA.start||'')+' ~ '+(DATA.target||'');
 const esc = s => (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const uniq = (a,f) => [...new Set(a.map(f).filter(Boolean))];
 // 区域按中文数字 一二三四…九 的数值排序（非区域/未知排最后）

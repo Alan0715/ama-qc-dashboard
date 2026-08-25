@@ -14,10 +14,12 @@
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
        background:linear-gradient(180deg,#FBF6EC 0%,#F3EAD9 100%);color:var(--ink);padding:0 0 28px}
   .wrap{max-width:1240px;margin:0 auto;padding:0 18px}
-  header.top{background:linear-gradient(120deg,#F5EFE0 0%,#ECE0C8 55%,#DDC9A6 140%);
-       color:#3A2F28;padding:22px 18px 18px;box-shadow:var(--shadow);margin-bottom:16px;
-       border-bottom:3px solid var(--gold)}
-  .top .wrap{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  header.top{background:transparent;color:#3A2F28;padding:16px 4vw 0;margin-bottom:16px}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+       max-width:1240px;padding:22px 36px 18px;
+       background:linear-gradient(120deg,#F5EFE0 0%,#ECE0C8 55%,#DDC9A6 140%);
+       border:1px solid rgba(201,166,107,.48);border-bottom:4px solid var(--gold);
+       border-radius:28px;box-shadow:var(--shadow)}
   .brand{font-family:"Songti SC","STSong","Noto Serif SC",serif;font-size:30px;font-weight:700;letter-spacing:3px;color:#3A2F28}
   .brand small{display:block;font-size:13px;font-weight:400;letter-spacing:1px;opacity:.75;margin-top:4px;color:#7A5C3F}
   .stat-pills{display:flex;gap:10px;flex-wrap:wrap}
@@ -132,12 +134,17 @@
   .g-grp-stat{margin-left:14px;font-weight:400;font-size:12px;color:#6B5A4A}
   .g-grp-stat b{color:var(--red);font-weight:800;font-size:13px}
   .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:14px}
-  @media(max-width:640px){.col{flex:1 1 100%}.brand{font-size:24px}}
+  @media(max-width:640px){
+    header.top{padding:10px 10px 0}
+    .top .wrap{padding:18px 20px 15px;border-radius:22px;align-items:flex-start}
+    .col{flex:1 1 100%}.brand{font-size:24px}
+    .stat-pills{width:100%}.pill{flex:1;min-width:68px}
+  }
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <div class="brand">华南大区｜品控稽核看板<small id="dashboardPeriod">2026-08-01 ~ 2026-08-24</small></div>
+  <div class="brand">华南大区<small id="dashboardPeriod">品控稽核看板 · 2026-08-01 ~ 2026-08-24</small></div>
   <div class="stat-pills" id="pills"><div class="pill"><b>72</b>报告</div><div class="pill"><b>389</b>问题点</div><div class="pill"><b>1</b>红线</div></div>
 </div></header>
 <div class="wrap">
@@ -324,7 +331,7 @@
 <script src="./data/qc-data.js"></script>
 <script>
 const DATA = window.QC_DATA;
-document.getElementById('dashboardPeriod').textContent=(DATA.start||'')+' ~ '+(DATA.target||'');
+document.getElementById('dashboardPeriod').textContent='品控稽核看板 · '+(DATA.start||'')+' ~ '+(DATA.target||'');
 const esc = s => (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const uniq = (a,f) => [...new Set(a.map(f).filter(Boolean))];
 // 区域按中文数字 一二三四…九 的数值排序（非区域/未知排最后）

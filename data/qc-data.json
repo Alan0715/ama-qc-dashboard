@@ -12267,16 +12267,6 @@
         "auditor_on": "黄谭莉",
         "time_off": "08-21",
         "time_on": "08-11"
-      },
-      {
-        "store": "佛山万象天地店",
-        "region": "华南九区",
-        "off": true,
-        "on": true,
-        "auditor_off": "—",
-        "auditor_on": "—",
-        "time_off": null,
-        "time_on": null
       }
     ],
     "region_summary": [
@@ -12330,15 +12320,15 @@
       },
       {
         "region": "华南九区",
-        "off": 1,
-        "on": 2,
-        "union": 2
+        "off": 0,
+        "on": 1,
+        "union": 1
       }
     ],
-    "off_miss_total": 6,
-    "on_miss_total": 21,
-    "union_total": 23,
-    "total_stores": 36
+    "off_miss_total": 5,
+    "on_miss_total": 20,
+    "union_total": 22,
+    "total_stores": 35
   },
   "store_calc": {
     "深圳仁恒梦中心店": {
@@ -12690,16 +12680,6 @@
       "online_food_issues": 2,
       "food_redline": false,
       "monthly": 84.91
-    },
-    "佛山万象天地店": {
-      "quality": null,
-      "food": null,
-      "compliance": null,
-      "cleaning": null,
-      "online": null,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": null
     }
   }
 }

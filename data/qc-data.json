@@ -12129,16 +12129,6 @@
         "time_on": null
       },
       {
-        "store": "广州万象城店·集",
-        "region": "华南五区",
-        "off": true,
-        "on": true,
-        "auditor_off": "—",
-        "auditor_on": "—",
-        "time_off": null,
-        "time_on": null
-      },
-      {
         "store": "佛山岭南天地店",
         "region": "华南六区",
         "off": false,
@@ -12296,9 +12286,9 @@
       },
       {
         "region": "华南五区",
-        "off": 1,
-        "on": 4,
-        "union": 4
+        "off": 0,
+        "on": 3,
+        "union": 3
       },
       {
         "region": "华南六区",
@@ -12325,10 +12315,10 @@
         "union": 1
       }
     ],
-    "off_miss_total": 5,
-    "on_miss_total": 20,
-    "union_total": 22,
-    "total_stores": 35
+    "off_miss_total": 4,
+    "on_miss_total": 19,
+    "union_total": 21,
+    "total_stores": 34
   },
   "store_calc": {
     "深圳仁恒梦中心店": {
@@ -12540,16 +12530,6 @@
       "online_food_issues": 0,
       "food_redline": false,
       "monthly": 84.64
-    },
-    "广州万象城店·集": {
-      "quality": null,
-      "food": null,
-      "compliance": null,
-      "cleaning": null,
-      "online": null,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": null
     },
     "佛山岭南天地店": {
       "quality": 80.65,

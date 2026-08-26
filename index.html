@@ -63,21 +63,14 @@
   .grp-h{font-family:"Songti SC","STSong",serif;font-size:15px;font-weight:700;color:var(--matcha);
         margin:16px 0 8px;border-left:5px solid var(--matcha);padding-left:10px}
   .rl-table-wrap{overflow-x:auto;margin-bottom:12px}
-  table.sc-matrix{border-collapse:collapse;width:100%;min-width:720px;table-layout:fixed;font-size:12px;background:var(--paper);
+  table.sc-matrix{border-collapse:collapse;width:100%;min-width:980px;table-layout:fixed;font-size:12px;background:var(--paper);
         border-radius:12px;box-shadow:var(--shadow)}
-  @media (max-width:768px){
-    table.sc-matrix{width:820px;font-size:12px}
-    table.sc-matrix th,table.sc-matrix td{padding:9px 8px}
-    table.sc-matrix th:first-child,table.sc-matrix td.sc-store{width:110px;font-size:13px;padding:9px 8px}
-    table.sc-matrix td.sc-region{width:60px;font-size:12px}
-    table.sc-matrix td.sc-cell,table.sc-matrix td.sc-num{font-size:13px}
-  }
   table.sc-matrix th,table.sc-matrix td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle}
   table.sc-matrix th{background:#F3EAD9;color:#4A312A;font-weight:700;white-space:nowrap;border-bottom:2px solid var(--gold)}
-  table.sc-matrix th:first-child{position:sticky;left:0;z-index:3;background:#F3EAD9;box-shadow:2px 0 0 0 var(--line);width:160px}
+  table.sc-matrix th:first-child{position:sticky;left:0;z-index:3;background:#F3EAD9;box-shadow:2px 0 0 0 var(--line);width:190px}
   table.sc-matrix td.sc-store,table.sc-matrix td.sc-region,table.sc-matrix td.sc-aud{text-align:center;color:#1A1A1A;white-space:nowrap}
   table.sc-matrix td.sc-region{width:90px}
-  table.sc-matrix td.sc-store{font-weight:700;position:sticky;left:0;z-index:2;background:var(--paper);box-shadow:2px 0 0 0 var(--line);width:160px}
+  table.sc-matrix td.sc-store{font-weight:700;position:sticky;left:0;z-index:2;background:var(--paper);box-shadow:2px 0 0 0 var(--line);width:190px;white-space:normal;overflow-wrap:anywhere;word-break:break-word;line-height:1.4}
   table.sc-matrix td.sc-empty{color:var(--muted)}
   table.sc-matrix td.sc-cell{font-weight:400;font-size:15px;color:var(--ink)}
   table.sc-matrix td.sc-num{font-weight:400;font-size:15px;color:var(--ink);white-space:nowrap}
@@ -86,6 +79,13 @@
   table.sc-matrix td.sc-cell .sc-item{line-height:1.3;margin:3px 0;text-align:center}
   table.sc-matrix td.sc-cell .sc-item:not(:last-child){border-bottom:1px dashed var(--line);padding-bottom:3px}
   table.sc-matrix td.sc-cell .sc-item.rl{color:var(--red) !important;font-weight:800;background:#FDE2E4;border-radius:4px}
+  @media (max-width:768px){
+    table.sc-matrix{width:900px;min-width:900px;font-size:12px}
+    table.sc-matrix th,table.sc-matrix td{padding:9px 8px}
+    table.sc-matrix th:first-child,table.sc-matrix td.sc-store{width:150px;font-size:13px;padding:9px 8px}
+    table.sc-matrix td.sc-region{width:70px;font-size:12px}
+    table.sc-matrix td.sc-cell,table.sc-matrix td.sc-num{font-size:13px}
+  }
   .mbar{display:flex;gap:10px;align-items:flex-end;margin:-4px 0 10px}
   .mbar label{font-size:12px;color:var(--muted);display:block;margin-bottom:3px}
   .mbar select{appearance:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;

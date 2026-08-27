@@ -364,14 +364,22 @@ function regionKey(s){
   if(t.indexOf('十')>=0){ const p=t.split('十'); return (p[0]?CN_NUM[p[0]]||1:1)*10 + (p[1]?(CN_NUM[p[1]]||0):0); }
   return CN_NUM[t]||9999;
 }
-function regionCmp(a,b){ const k=regionKey(a)-regionKey(b); return k!==0?k:(a<b?-1:a>b?1:0); }
+const ORG_STRUCTURE=DATA.org_structure||[];
+const ORG_STORE_ORDER=new Map(ORG_STRUCTURE.map((row,index)=>[row.store,index]));
+const ORG_REGION_ORDER=new Map(uniq(ORG_STRUCTURE,row=>row.region).map((region,index)=>[region,index]));
+function regionCmp(a,b){
+  const oa=ORG_REGION_ORDER.get(a), ob=ORG_REGION_ORDER.get(b);
+  if(oa!=null||ob!=null) return (oa??9999)-(ob??9999);
+  const k=regionKey(a)-regionKey(b); return k!==0?k:(a<b?-1:a>b?1:0);
+}
+function storeCmp(a,b){ return (ORG_STORE_ORDER.get(a)??9999)-(ORG_STORE_ORDER.get(b)??9999) || (a<b?-1:a>b?1:0); }
 const all = DATA.cards.concat(DATA.redline);
 const dates = uniq(all.concat(DATA.scores),r=>r.date).sort().reverse();
-const stores = uniq(all.concat(DATA.scores),r=>r.store).sort();
+const stores = uniq(all.concat(DATA.scores),r=>r.store).sort(storeCmp);
 const regions = uniq(all.concat(DATA.scores),r=>r.region).filter(x=>x&&x!=='—').sort(regionCmp);
 const reports = uniq(all,r=>r.report).sort();
 const channels = uniq(all,r=>r.channel).sort();
-const stores2 = stores.slice().sort((a,b)=> (all.filter(r=>r.store===b).length)-(all.filter(r=>r.store===a).length));
+const stores2 = stores.slice();
 // 红线分数键集合：门店|日期|cat —— 命中即该报告含⭐️食安/线上红线问题，得分用红色字体
 const rlKeys = new Set(DATA.redline.map(r=> (r.store||'')+'|'+(r.date||'')+'|'+(r.cat||'')));
 // 品质/月度得分 大区(区域)内排名：按分数降序，同分并列同名次；基于全量数据，不受页面筛选影响
@@ -450,7 +458,7 @@ function rlTableHTML(rows){
   rows = rows.slice().sort((a,b)=>{
     const ra=a.region||'', rb=b.region||'';
     if(ra!==rb) return regionCmp(ra,rb);
-    return (a.store<b.store?-1:a.store>b.store?1:0);
+    return storeCmp(a.store,b.store);
   });
   const stores = uniq(rows,r=>r.store);
   if(!stores.length) return '<div class=empty>当前筛选无数据</div>';
@@ -510,7 +518,7 @@ function ptableHTML(items){
   items=items.slice().sort((a,b)=>{
     const ca=catOrder.indexOf(a.cat), cb=catOrder.indexOf(b.cat);
     if(ca!==cb) return ca-cb;
-    if(a.store!==b.store) return a.store<b.store?-1:1;
+    if(a.store!==b.store) return storeCmp(a.store,b.store);
     return (a.date<b.date?1:a.date>b.date?-1:0);
   });
   let h='<div class=ptable-wrap><table class=ptable><thead><tr><th>门店</th><th>报告</th><th>扣分原因</th></tr></thead><tbody>';
@@ -548,7 +556,7 @@ function gapGroupedHTML(rows){
   const regs=Object.keys(byReg).sort(regionCmp);
   let h='<table class=gap><thead><tr><th>门店</th><th class=g-num>线下</th><th>线下审核员</th><th>线下审核时间</th><th class=g-num>线上</th><th>线上审核员</th><th>线上审核时间</th></tr></thead><tbody>';
   regs.forEach(reg=>{
-    const list=byReg[reg].slice().sort((a,b)=>a.store<b.store?-1:a.store>b.store?1:0);
+    const list=byReg[reg].slice().sort((a,b)=>storeCmp(a.store,b.store));
     const offCnt=list.filter(r=>r.off).length, onCnt=list.filter(r=>r.on).length;
     h+='<tr class=g-group><td colspan=7><span class=g-grp-name>'+esc(reg)+'</span>'
       +'<span class=g-grp-stat>线下未稽核 <b>'+offCnt+'</b> · 线上未稽核 <b>'+onCnt+'</b></span></td></tr>';

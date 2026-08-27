@@ -12636,13 +12636,13 @@
       "cat": "食安",
       "reason": "抽查水吧位员工衣服上存在毛发，需加强黏毛，避免异物风险；衣物上粘有毛发",
       "stores": [
-        "深圳海上世界店",
-        "深圳怀德万象汇店",
-        "深圳欢乐港湾店",
         "深圳金光华店",
-        "深圳科兴科学园店",
         "深圳万象前海店",
-        "深圳万象天地店·茶歇"
+        "深圳欢乐港湾店",
+        "深圳科兴科学园店",
+        "深圳海上世界店",
+        "深圳万象天地店·茶歇",
+        "深圳怀德万象汇店"
       ],
       "storeCount": 7,
       "count": 7
@@ -12651,10 +12651,10 @@
       "cat": "食安",
       "reason": "水吧冷水壶手柄处破裂且移位，易产生碎屑，造成异物风险，需加强定期检查并更换；保存容器有破损",
       "stores": [
-        "广州乐峰广场店",
+        "深圳万象食家店",
         "广州太古汇店",
         "广州永庆坊店·茶肆",
-        "深圳万象食家店"
+        "广州乐峰广场店"
       ],
       "storeCount": 4,
       "count": 4
@@ -12663,8 +12663,8 @@
       "cat": "食安",
       "reason": "阿嬷岗伙伴衣物上粘有毛发，需加强岗前及返岗粘毛操作，避免毛发异物风险；衣物上粘有毛发",
       "stores": [
-        "广州乐峰广场店",
         "广州塔广场店",
+        "广州乐峰广场店",
         "珠海万象汇店"
       ],
       "storeCount": 3,
@@ -12674,8 +12674,8 @@
       "cat": "食安",
       "reason": "备料冷藏冰箱炼乳外壁存在食物残留，易滋生细菌，需加强随手清洁，避免造成交叉污染；保存容器/外壁存在明显污渍",
       "stores": [
-        "东莞记忆店·茶肆",
         "广州天汇广场店",
+        "东莞记忆店·茶肆",
         "珠海富华里店"
       ],
       "storeCount": 3,
@@ -12696,9 +12696,9 @@
       "cat": "食安",
       "reason": "奶酪有细小毛絮异物，需注意半成品及时加盖管理，避免异物落入；有细小的毛絮异物",
       "stores": [
-        "广州乐峰广场店",
+        "深圳梅林卓悦汇店",
         "广州天环广场店",
-        "深圳梅林卓悦汇店"
+        "广州乐峰广场店"
       ],
       "storeCount": 3,
       "count": 3
@@ -12727,8 +12727,8 @@
       "cat": "食安",
       "reason": "水吧伙伴衣物上粘有毛发，需加强岗前及返岗粘毛操作，避免毛发异物风险；衣物上粘有毛发",
       "stores": [
-        "东莞记忆店·茶肆",
-        "广州太古汇店"
+        "广州太古汇店",
+        "东莞记忆店·茶肆"
       ],
       "storeCount": 2,
       "count": 2
@@ -12737,8 +12737,8 @@
       "cat": "品质",
       "reason": "西瓜粒内有黄筋，需校准伙伴水果备制符合标准；其他较严重情况",
       "stores": [
-        "广州天环广场店",
         "深圳梅林卓悦汇店",
+        "广州天环广场店",
         "深圳腾讯总部园区店"
       ],
       "storeCount": 3,
@@ -12748,8 +12748,8 @@
       "cat": "品质",
       "reason": "打.米麻薯灼烧黑糖粉存在明显烧焦发黑情况，需校准伙伴酌烧手法，避免烧焦发苦，影响产品风味；其他较严重情况",
       "stores": [
-        "广州塔广场店",
-        "深圳来福士广场店"
+        "深圳来福士广场店",
+        "广州塔广场店"
       ],
       "storeCount": 2,
       "count": 2
@@ -12758,8 +12758,8 @@
       "cat": "品质",
       "reason": "马蹄丸子存在3颗以上的结团，搅拌无法分开，需关注制作过程筛粉标准操作，可手动分离结团情况，避免难以吸食影响顾客体验；丸子类口感明显粉感，半成品粉团、结块",
       "stores": [
-        "东莞汇一城店",
-        "广州天汇广场店"
+        "广州天汇广场店",
+        "东莞汇一城店"
       ],
       "storeCount": 2,
       "count": 2
@@ -12818,16 +12818,6 @@
   "audit_gap": {
     "detail": [
       {
-        "store": "深圳仁恒梦中心店",
-        "region": "华南一区",
-        "off": false,
-        "on": true,
-        "auditor_off": "黄育彦",
-        "auditor_on": "—",
-        "time_off": "08-14",
-        "time_on": null
-      },
-      {
         "store": "深圳ONE AVENUE卓悦中心店",
         "region": "华南一区",
         "off": true,
@@ -12868,6 +12858,16 @@
         "time_on": "08-06"
       },
       {
+        "store": "深圳仁恒梦中心店",
+        "region": "华南一区",
+        "off": false,
+        "on": true,
+        "auditor_off": "黄育彦",
+        "auditor_on": "—",
+        "time_off": "08-14",
+        "time_on": null
+      },
+      {
         "store": "深圳布吉万象汇店",
         "region": "华南二区",
         "off": false,
@@ -12878,14 +12878,14 @@
         "time_on": null
       },
       {
-        "store": "深圳平安金融中心店",
+        "store": "深圳梅林卓悦汇店",
         "region": "华南二区",
         "off": false,
-        "on": true,
-        "auditor_off": "黄育彦",
-        "auditor_on": "—",
-        "time_off": "08-24",
-        "time_on": null
+        "on": false,
+        "auditor_off": "林舒漫",
+        "auditor_on": "牛佳琪",
+        "time_off": "08-19",
+        "time_on": "08-12"
       },
       {
         "store": "深圳kkone店",
@@ -12898,14 +12898,14 @@
         "time_on": "08-19"
       },
       {
-        "store": "深圳梅林卓悦汇店",
+        "store": "深圳平安金融中心店",
         "region": "华南二区",
         "off": false,
-        "on": false,
-        "auditor_off": "林舒漫",
-        "auditor_on": "牛佳琪",
-        "time_off": "08-19",
-        "time_on": "08-12"
+        "on": true,
+        "auditor_off": "黄育彦",
+        "auditor_on": "—",
+        "time_off": "08-24",
+        "time_on": null
       },
       {
         "store": "深圳万象前海店",
@@ -12930,16 +12930,6 @@
       {
         "store": "深圳宝安大仟里店",
         "region": "华南三区",
-        "off": false,
-        "on": true,
-        "auditor_off": "黄育彦",
-        "auditor_on": "—",
-        "time_off": "08-17",
-        "time_on": null
-      },
-      {
-        "store": "深圳万象天地店·茶歇",
-        "region": "华南四区",
         "off": false,
         "on": true,
         "auditor_off": "黄育彦",
@@ -12976,6 +12966,16 @@
         "auditor_on": "林舒漫",
         "time_off": "08-24",
         "time_on": "08-13"
+      },
+      {
+        "store": "深圳万象天地店·茶歇",
+        "region": "华南四区",
+        "off": false,
+        "on": true,
+        "auditor_off": "黄育彦",
+        "auditor_on": "—",
+        "time_off": "08-17",
+        "time_on": null
       },
       {
         "store": "深圳湾万象城店",
@@ -13058,16 +13058,6 @@
         "time_on": null
       },
       {
-        "store": "广州乐峰广场店",
-        "region": "华南六区",
-        "off": false,
-        "on": false,
-        "auditor_off": "林舒漫",
-        "auditor_on": "牛佳琪",
-        "time_off": "08-25",
-        "time_on": "08-10"
-      },
-      {
         "store": "东莞记忆店·茶肆",
         "region": "华南六区",
         "off": false,
@@ -13076,6 +13066,16 @@
         "auditor_on": "曾媛媛",
         "time_off": "08-14",
         "time_on": "08-05"
+      },
+      {
+        "store": "广州乐峰广场店",
+        "region": "华南六区",
+        "off": false,
+        "on": false,
+        "auditor_off": "林舒漫",
+        "auditor_on": "牛佳琪",
+        "time_off": "08-25",
+        "time_on": "08-10"
       },
       {
         "store": "厦门万象城店",
@@ -13220,16 +13220,6 @@
     "total_stores": 34
   },
   "store_calc": {
-    "深圳仁恒梦中心店": {
-      "quality": 83.17,
-      "food": 83.76,
-      "compliance": 95,
-      "cleaning": 81.73,
-      "online": null,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": 84.24
-    },
     "深圳ONE AVENUE卓悦中心店": {
       "quality": null,
       "food": null,
@@ -13270,6 +13260,16 @@
       "food_redline": false,
       "monthly": 84.86
     },
+    "深圳仁恒梦中心店": {
+      "quality": 83.17,
+      "food": 83.76,
+      "compliance": 95,
+      "cleaning": 81.73,
+      "online": null,
+      "online_food_issues": 0,
+      "food_redline": false,
+      "monthly": 84.24
+    },
     "深圳布吉万象汇店": {
       "quality": 82.52,
       "food": 84.62,
@@ -13280,15 +13280,15 @@
       "food_redline": false,
       "monthly": 84.93
     },
-    "深圳平安金融中心店": {
-      "quality": 84.47,
-      "food": 86.32,
+    "深圳梅林卓悦汇店": {
+      "quality": 82.52,
+      "food": 78.62,
       "compliance": 100,
-      "cleaning": 82.69,
-      "online": null,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": 86.22
+      "cleaning": 81.73,
+      "online": 80,
+      "online_food_issues": 2,
+      "food_redline": true,
+      "monthly": 82.94
     },
     "深圳kkone店": {
       "quality": 80.65,
@@ -13300,15 +13300,15 @@
       "food_redline": true,
       "monthly": 81.18
     },
-    "深圳梅林卓悦汇店": {
-      "quality": 82.52,
-      "food": 78.62,
+    "深圳平安金融中心店": {
+      "quality": 84.47,
+      "food": 86.32,
       "compliance": 100,
-      "cleaning": 81.73,
-      "online": 80,
-      "online_food_issues": 2,
-      "food_redline": true,
-      "monthly": 82.94
+      "cleaning": 82.69,
+      "online": null,
+      "online_food_issues": 0,
+      "food_redline": false,
+      "monthly": 86.22
     },
     "深圳万象前海店": {
       "quality": 81.63,
@@ -13340,16 +13340,6 @@
       "food_redline": false,
       "monthly": 85.76
     },
-    "深圳万象天地店·茶歇": {
-      "quality": 82.65,
-      "food": 84.62,
-      "compliance": 100,
-      "cleaning": 80.77,
-      "online": null,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": 84.6
-    },
     "深圳科兴科学园店": {
       "quality": 84.38,
       "food": 83.76,
@@ -13379,6 +13369,16 @@
       "online_food_issues": 0,
       "food_redline": false,
       "monthly": 83.33
+    },
+    "深圳万象天地店·茶歇": {
+      "quality": 82.65,
+      "food": 84.62,
+      "compliance": 100,
+      "cleaning": 80.77,
+      "online": null,
+      "online_food_issues": 0,
+      "food_redline": false,
+      "monthly": 84.6
     },
     "深圳湾万象城店": {
       "quality": 80.65,
@@ -13460,16 +13460,6 @@
       "food_redline": false,
       "monthly": 84.96
     },
-    "广州乐峰广场店": {
-      "quality": 79.63,
-      "food": 83.26,
-      "compliance": 95,
-      "cleaning": 82.69,
-      "online": 72,
-      "online_food_issues": 1,
-      "food_redline": false,
-      "monthly": 82.87
-    },
     "东莞记忆店·茶肆": {
       "quality": 80.02,
       "food": 83.12,
@@ -13479,6 +13469,16 @@
       "online_food_issues": 3,
       "food_redline": false,
       "monthly": 83.57
+    },
+    "广州乐峰广场店": {
+      "quality": 79.63,
+      "food": 83.26,
+      "compliance": 95,
+      "cleaning": 82.69,
+      "online": 72,
+      "online_food_issues": 1,
+      "food_redline": false,
+      "monthly": 82.87
     },
     "厦门万象城店": {
       "quality": 80.11,
@@ -13560,5 +13560,177 @@
       "food_redline": false,
       "monthly": 84.91
     }
-  }
+  },
+  "org_structure": [
+    {
+      "seq": 1,
+      "store": "深圳ONE AVENUE卓悦中心店",
+      "region": "华南一区"
+    },
+    {
+      "seq": 2,
+      "store": "深圳金光华店",
+      "region": "华南一区"
+    },
+    {
+      "seq": 3,
+      "store": "深圳万象食家店",
+      "region": "华南一区"
+    },
+    {
+      "seq": 4,
+      "store": "深圳天安云谷店",
+      "region": "华南一区"
+    },
+    {
+      "seq": 5,
+      "store": "深圳仁恒梦中心店",
+      "region": "华南一区"
+    },
+    {
+      "seq": 6,
+      "store": "深圳布吉万象汇店",
+      "region": "华南二区"
+    },
+    {
+      "seq": 7,
+      "store": "深圳梅林卓悦汇店",
+      "region": "华南二区"
+    },
+    {
+      "seq": 8,
+      "store": "深圳kkone店",
+      "region": "华南二区"
+    },
+    {
+      "seq": 9,
+      "store": "深圳平安金融中心店",
+      "region": "华南二区"
+    },
+    {
+      "seq": 10,
+      "store": "深圳万象前海店",
+      "region": "华南三区"
+    },
+    {
+      "seq": 11,
+      "store": "深圳欢乐港湾店",
+      "region": "华南三区"
+    },
+    {
+      "seq": 12,
+      "store": "深圳宝安大仟里店",
+      "region": "华南三区"
+    },
+    {
+      "seq": 13,
+      "store": "深圳科兴科学园店",
+      "region": "华南四区"
+    },
+    {
+      "seq": 14,
+      "store": "深圳来福士广场店",
+      "region": "华南四区"
+    },
+    {
+      "seq": 15,
+      "store": "深圳海上世界店",
+      "region": "华南四区"
+    },
+    {
+      "seq": 16,
+      "store": "深圳万象天地店·茶歇",
+      "region": "华南四区"
+    },
+    {
+      "seq": 17,
+      "store": "深圳湾万象城店",
+      "region": "华南四区"
+    },
+    {
+      "seq": 18,
+      "store": "广州太古汇店",
+      "region": "华南五区"
+    },
+    {
+      "seq": 19,
+      "store": "广州天环广场店",
+      "region": "华南五区"
+    },
+    {
+      "seq": 20,
+      "store": "广州塔广场店",
+      "region": "华南五区"
+    },
+    {
+      "seq": 21,
+      "store": "广州天汇广场店",
+      "region": "华南五区"
+    },
+    {
+      "seq": 22,
+      "store": "佛山岭南天地店",
+      "region": "华南六区"
+    },
+    {
+      "seq": 23,
+      "store": "广州永庆坊店·茶肆",
+      "region": "华南六区"
+    },
+    {
+      "seq": 24,
+      "store": "东莞汇一城店",
+      "region": "华南六区"
+    },
+    {
+      "seq": 25,
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区"
+    },
+    {
+      "seq": 26,
+      "store": "广州乐峰广场店",
+      "region": "华南六区"
+    },
+    {
+      "seq": 27,
+      "store": "厦门万象城店",
+      "region": "华南七区"
+    },
+    {
+      "seq": 28,
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南七区"
+    },
+    {
+      "seq": 29,
+      "store": "深圳宝安壹方城店",
+      "region": "华南八区"
+    },
+    {
+      "seq": 30,
+      "store": "深圳怀德万象汇店",
+      "region": "华南八区"
+    },
+    {
+      "seq": 31,
+      "store": "深圳腾讯总部园区店",
+      "region": "华南八区"
+    },
+    {
+      "seq": 32,
+      "store": "珠海富华里店",
+      "region": "华南九区"
+    },
+    {
+      "seq": 33,
+      "store": "顺德万象汇店",
+      "region": "华南九区"
+    },
+    {
+      "seq": 34,
+      "store": "珠海万象汇店",
+      "region": "华南九区"
+    }
+  ]
 }

@@ -139,6 +139,26 @@
     .top .wrap{padding:18px 20px 15px;border-radius:22px;align-items:flex-start}
     .col{flex:1 1 100%}.brand{font-size:24px}
     .stat-pills{width:100%}.pill{flex:1;min-width:68px}
+    .gap-list,.ptable-wrap{overflow-x:hidden}
+    table.gap,table.cm,table.ptable{width:100%;table-layout:fixed;font-size:10px}
+    table.gap th,table.gap td,
+    table.cm th,table.cm td,
+    table.ptable th,table.ptable td{padding:6px 4px;white-space:normal;overflow-wrap:anywhere;word-break:break-word;line-height:1.35}
+    table.gap th:nth-child(1),table.gap td:nth-child(1){width:26%}
+    table.gap th:nth-child(2),table.gap td:nth-child(2){width:17%}
+    table.gap th:nth-child(3),table.gap td:nth-child(3){width:17%}
+    table.gap th:nth-child(4),table.gap td:nth-child(4){width:20%}
+    table.gap th:nth-child(5),table.gap td:nth-child(5){width:20%}
+    table.gap td.g-store,table.gap td.g-region,table.gap td.g-aud,table.gap td.g-num,.g-st{white-space:normal}
+    table.cm th:nth-child(1),table.cm td:nth-child(1){width:15%}
+    table.cm th:nth-child(2),table.cm td:nth-child(2){width:69%}
+    table.cm th:nth-child(3),table.cm td:nth-child(3){width:16%}
+    table.cm td.cm-reason,table.cm td.cm-stores{min-width:0;white-space:normal}
+    table.ptable th:nth-child(1),table.ptable td:nth-child(1){width:25%}
+    table.ptable th:nth-child(2),table.ptable td:nth-child(2){width:15%}
+    table.ptable th:nth-child(3),table.ptable td:nth-child(3){width:60%}
+    table.ptable td.pt-store,table.ptable td.pt-cat{white-space:normal}
+    table.ptable td.pt-reason{min-width:0}
   }
 </style>
 </head>
@@ -510,7 +530,7 @@ function commonHTML(){
     if(ca!==cb) return ca-cb;
     return b.storeCount-a.storeCount;
   });
-  let h='<table class=cm><thead><tr><th>报告</th><th>共性问题（扣分原因）</th><th class=cm-stores-h>涉及门店数量</th></tr></thead><tbody>';
+  let h='<table class=cm><thead><tr><th>报告</th><th>扣分原因</th><th class=cm-stores-h>涉及门店数量</th></tr></thead><tbody>';
   rows.forEach(r=>{
     const sc=r.cat==='线上产品'?'线上':(r.cat||'');
     h+='<tr><td class=cm-cat>'+esc(sc)+'</td>'

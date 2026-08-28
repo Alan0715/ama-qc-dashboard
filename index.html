@@ -546,9 +546,9 @@ function rlTableHTML(rows){
   return h+'</tbody></table>';
 }
 function renderMatrix(){
-  // 得分矩阵：打开即显示全部日期得分；仅跟随 门店/区域/报告/渠道（不跟随日期筛选）
+  // 得分矩阵与顶部全部筛选联动，包括日期；不选日期时显示本月全部得分。
   const f=getFilters();
-  const match=r=>(!f.store||r.store===f.store)&&(!f.region||(r.region||'—')===f.region)&&(!f.report||r.report===f.report)&&(!f.channel||r.channel===f.channel);
+  const match=r=>(!f.date||r.date===f.date)&&(!f.store||r.store===f.store)&&(!f.region||(r.region||'—')===f.region)&&(!f.report||r.report===f.report)&&(!f.channel||r.channel===f.channel);
   rlTable.innerHTML=rlTableHTML(DATA.scores.filter(match));
   renderGap();
 }

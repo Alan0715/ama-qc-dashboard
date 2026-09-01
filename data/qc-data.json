@@ -3,8 +3,8 @@
   "start": "2026-08-01",
   "days": 20,
   "stats": {
-    "reports": 164,
-    "issues": 1185,
+    "reports": 166,
+    "issues": 1198,
     "redline": 2
   },
   "groups": [
@@ -2259,6 +2259,34 @@
       "checked_at": "2026-08-28 16:28",
       "report_id": "6a915d1e66f2054ca5badca1",
       "report_url": "https://xundian.alphabets.cn/v2/report/6a915d1e66f2054ca5badca1"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "auditor": "黄瑞",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "cat": "线上产品",
+      "score": 72,
+      "real": 18,
+      "channel": "线上",
+      "checked_at": "2026-08-28 17:47",
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "auditor": "李睦晗",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "cat": "线上产品",
+      "score": 80,
+      "real": 20,
+      "channel": "线上",
+      "checked_at": "2026-08-28 18:22",
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
     },
     {
       "date": "2026-08-31",
@@ -23467,6 +23495,240 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6a915d1e66f2054ca5badca1"
     },
     {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 2,
+      "reason": "8月28日 8:39伙伴制备六堡茶汤时，8:39:47开始过滤，直到8:50:23才移开滤茶袋，标准应计时1分钟至2-3秒无滴水状，需校准伙伴标准操作，避免影响产品品质",
+      "category": "【专项半成品管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "【六堡茶汤】：过滤动作符合标准",
+      "reason_tags": [],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": -2,
+      "max": 0,
+      "reason": "8月28日 9:31伙伴拿取打凉中的抹茶雪糕浆时未进行测温，需校准伙伴测温至30℃以下再加入安佳淡奶油搅拌均匀，应加强宣导避免影响产品品质\n8月28日 9:42伙伴拿取打凉中的熟糯米未进行测温，需校准伙伴使用前应进行测温，避免温度异常影响产品口感",
+      "category": "【其他半成品管理问题】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "其他半成品存在违反操作的行为",
+      "reason_tags": [
+        "浆类半成品错误",
+        "手作类半成品错误"
+      ],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 1,
+      "reason": "8月28日 15:51伙伴打取黑糖珍珠时未进行搅拌，回看15:41-15:51期间均未见搅拌动作，需校准伙伴10分钟搅拌一次，避免影响产品品质",
+      "category": "【产品制作管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "底料打取操作符合标准",
+      "reason_tags": [
+        "打取未搅拌"
+      ],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 1,
+      "reason": "8月28日 19:57伙伴从冰箱内接取茉莉花水未进行摇晃，需校准伙伴茉莉花水使用前应进行摇晃，避免沉淀影响产品品质",
+      "category": "【产品制作管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "原汁应用操作符合标准",
+      "reason_tags": [
+        "原汁使用前未摇晃/搅拌"
+      ],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 1,
+      "reason": "8月28日 14:01伙伴制作蜜桃树莓柠时，捶打柠檬块后进行了滤汁操作，需校准伙伴该饮品捶打后无需滤汁，避免风味不足影响产品品质",
+      "category": "【产品制作管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "非冰沙产品操作符合标准",
+      "reason_tags": [
+        "其他违规操作"
+      ],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 0,
+      "reason": "3条",
+      "category": "【食安管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "存在违反食安操作条数",
+      "reason_tags": [],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳万象食家店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 0,
+      "reason": "8月28日 11:58伙伴个人物品未定位存放，需校准伙伴个人物品应与门店物料分开存放\n8月28日 12:47伙伴制作饮品时，手抠饮品杯内壁，存在交叉污染，需校准伙伴正确转移饮品杯\n8月28日 12:48伙伴将文件夹直接放在储存饮品杯的盘子上，14:38又将饮品杯倒扣在盘子上，存在交叉污染",
+      "category": "【食安管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "其他存在违反食安操作的行为",
+      "reason_tags": [],
+      "report_id": "6a9521de60d3b1de33e87c5d",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a9521de60d3b1de33e87c5d"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 2,
+      "reason": "8月28日 8:02备料岗伙伴制备六堡茶汤，伙伴操作动作为加盖计时转档，标准加热热水至完全沸腾后转二档计时加盖，需关注伙伴操作规范",
+      "category": "【专项半成品管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "【六堡茶汤】：煮制动作符合标准",
+      "reason_tags": [],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": -1,
+      "max": 0,
+      "reason": "8月28日 20:34操作岗伙伴将糯米麻薯转移至底料岗未进行温度确认，标准应打凉至60℃以下才可使用，需校准伙伴操作规范",
+      "category": "【其他半成品管理问题】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "其他半成品存在违反操作的行为",
+      "reason_tags": [
+        "手作类半成品错误"
+      ],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 1,
+      "reason": "8月28日 15:42操作岗伙伴打取老椰清补凉中椰片碎未进行克重确认，标准椰片碎应打取5g",
+      "category": "【产品制作管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "底料打取操作符合标准",
+      "reason_tags": [
+        "打取未搅拌"
+      ],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 1,
+      "reason": "8月28日 19:55伙伴打取雪糕半球未进行翻拌，易导致雪糕风味不均匀",
+      "category": "【产品制作管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "雪糕打取操作符合标准",
+      "reason_tags": [],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 0,
+      "reason": "2条",
+      "category": "【食安管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "存在违反食安操作条数",
+      "reason_tags": [],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
+      "date": "2026-08-28",
+      "store": "深圳金光华店",
+      "region": "华南一区",
+      "report": "【品控】2026年-线上产品专项稽核表",
+      "score": 0,
+      "max": 0,
+      "reason": "8月28日 21:07—21:29底料台冷井未完全密封，易导致冷藏冰箱冷气流失影响冰箱温度以及冷藏效果，需门店关注冷井需及时加盖密封\n8月28日 21:41底料打取至饮品杯内，又将已打取的物料铲出至不锈钢杯内，易造成交叉污染风险",
+      "category": "【食安管理】",
+      "media": [],
+      "cat": "线上产品",
+      "channel": "线上",
+      "desc": "其他存在违反食安操作的行为",
+      "reason_tags": [],
+      "report_id": "6a94fe7d60d3b1de33e86298",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6a94fe7d60d3b1de33e86298"
+    },
+    {
       "date": "2026-08-31",
       "store": "深圳宝安大仟里店",
       "region": "华南三区",
@@ -24327,21 +24589,21 @@
         "store": "深圳金光华店",
         "region": "华南一区",
         "off": false,
-        "on": true,
+        "on": false,
         "auditor_off": "黄育彦",
-        "auditor_on": "—",
+        "auditor_on": "李睦晗",
         "time_off": "08-25",
-        "time_on": null
+        "time_on": "08-28"
       },
       {
         "store": "深圳万象食家店",
         "region": "华南一区",
         "off": false,
-        "on": true,
+        "on": false,
         "auditor_off": "林舒漫",
-        "auditor_on": "—",
+        "auditor_on": "黄瑞",
         "time_off": "08-19",
-        "time_on": null
+        "time_on": "08-28"
       },
       {
         "store": "深圳天安云谷店",
@@ -24658,8 +24920,8 @@
       {
         "region": "华南一区",
         "off": 0,
-        "on": 2,
-        "union": 2
+        "on": 0,
+        "union": 0
       },
       {
         "region": "华南二区",
@@ -24711,8 +24973,8 @@
       }
     ],
     "off_miss_total": 1,
-    "on_miss_total": 2,
-    "union_total": 3,
+    "on_miss_total": 0,
+    "union_total": 1,
     "total_stores": 34
   },
   "store_calc": {
@@ -24731,20 +24993,20 @@
       "food": 84.62,
       "compliance": 100,
       "cleaning": 83.65,
-      "online": null,
+      "online": 80,
       "online_food_issues": 0,
       "food_redline": false,
       "monthly": 85.52
     },
     "深圳万象食家店": {
-      "quality": 83.33,
+      "quality": 81.33,
       "food": 84.62,
       "compliance": 100,
       "cleaning": 83.65,
-      "online": null,
+      "online": 72,
       "online_food_issues": 0,
       "food_redline": false,
-      "monthly": 85.45
+      "monthly": 84.65
     },
     "深圳天安云谷店": {
       "quality": 82.83,

@@ -31,6 +31,7 @@
   .filters label{font-size:12px;color:var(--muted);display:block;margin-bottom:3px}
   .filters select{appearance:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;
         padding:8px 12px;font-size:14px;color:var(--ink);min-width:150px;box-shadow:var(--shadow)}
+  .filters select[multiple]{appearance:auto;min-width:180px;height:76px;padding:6px 8px;background-image:none}
   .filters .reset{background:var(--red);color:#fff;border:none;border-radius:10px;padding:9px 16px;
         font-size:14px;cursor:pointer;box-shadow:var(--shadow)}
   .filters .reset:hover{background:var(--red2)}
@@ -196,9 +197,8 @@
 </div></header>
 <div class="wrap">
   <div class="filters">
-    <div><label>日期</label><select id="fDate"><option value="">全部日期</option><option>2026-08-18</option><option>2026-08-17</option><option>2026-08-14</option><option>2026-08-13</option><option>2026-08-12</option><option>2026-08-11</option><option>2026-08-10</option><option>2026-08-07</option><option>2026-08-06</option><option>2026-08-05</option><option>2026-08-04</option></select></div>
-    <div><label>门店</label><select id="fStore"><option value="">全部门店</option><option>厦门万象城店</option><option>佛山岭南天地店</option><option>东莞记忆店·茶肆</option><option>深圳天安云谷店</option><option>深圳腾讯总部园区店</option><option>广州塔广场店</option><option>深圳仁恒梦中心店</option><option>深圳来福士广场店</option><option>深圳万象天地店·茶歇</option><option>深圳宝安壹方城店</option><option>深圳欢乐港湾店</option><option>深圳科兴科学园店</option><option>东莞汇一城店</option><option>广州天汇广场店</option><option>深圳宝安大仟里店</option><option>广州太古汇店</option><option>广州乐峰广场店</option><option>珠海万象汇店</option><option>深圳梅林卓悦汇店</option><option>深圳湾万象城店</option><option>深圳海上世界店</option></select></div>
-    <div><label>区域</label><select id="fRegion"><option value="">全部区域</option><option>华南一区</option><option>华南二区</option><option>华南三区</option><option>华南四区</option><option>华南五区</option><option>华南六区</option><option>华南七区</option><option>华南八区</option><option>华南九区</option></select></div>
+    <div><label>区域（可多选）</label><select id="fRegion" multiple aria-label="区域（可多选）"></select></div>
+    <div><label>门店（可多选）</label><select id="fStore" multiple aria-label="门店（可多选）"></select></div>
     <div><label>报告名称</label><select id="fReport"><option value="">全部报告</option><option>【品控】2026年-合规审核表</option><option>【品控】2026年-品质审核表</option><option>【品控】2026年-清洁&amp;服务审核表</option><option>【品控】2026年-线上产品专项稽核表</option><option>【品控】2026年-食安审核表</option></select></div>
     <div><label>渠道</label><select id="fChannel"><option value="">全部渠道</option><option>线上</option><option>线下</option></select></div>
     <button class="reset" id="fReset">重置</button>
@@ -408,7 +408,6 @@ function regionCmp(a,b){
 }
 function storeCmp(a,b){ return (ORG_STORE_ORDER.get(a)??9999)-(ORG_STORE_ORDER.get(b)??9999) || (a<b?-1:a>b?1:0); }
 const all = DATA.cards.concat(DATA.redline);
-const dates = uniq(all.concat(DATA.scores),r=>r.date).sort().reverse();
 const stores = uniq(all.concat(DATA.scores),r=>r.store).sort(storeCmp);
 const regions = uniq(all.concat(DATA.scores),r=>r.region).filter(x=>x&&x!=='—').sort(regionCmp);
 const reports = uniq(all,r=>r.report).sort();
@@ -441,16 +440,20 @@ const _qRank = {}, _mRank = {}, _qTotal = {}, _mTotal = {}, _stReg2 = {};
   }
   fill(regQ,_qRank,_qTotal); fill(regM,_mRank,_mTotal);
 })();
-const dateSel=document.getElementById('fDate'),
-      storeSel=document.getElementById('fStore'), regionSel=document.getElementById('fRegion'),
+const storeSel=document.getElementById('fStore'), regionSel=document.getElementById('fRegion'),
       reportSel=document.getElementById('fReport'), channelSel=document.getElementById('fChannel'),
       board=document.getElementById('board'), redEl=document.getElementById('redline'),
       rlTable=document.getElementById('rlTable'), cntEl=document.getElementById('cnt'), pills=document.getElementById('pills');
-dateSel.innerHTML='<option value="">全部日期</option>'+dates.map(d=>'<option>'+esc(d)+'</option>').join('');
-// 默认显示全部日期；可按日期筛选查看某一天
-dateSel.value='';
-storeSel.innerHTML='<option value="">全部门店</option>'+stores2.map(s=>'<option>'+esc(s)+'</option>').join('');
-regionSel.innerHTML='<option value="">全部区域</option>'+regions.map(r=>'<option>'+esc(r)+'</option>').join('');
+const selectedValues=sel=>Array.from(sel.selectedOptions,option=>option.value).filter(Boolean);
+const STORE_REGION=new Map(ORG_STRUCTURE.map(row=>[row.store,row.region]));
+regionSel.innerHTML=regions.map(r=>'<option value="'+esc(r)+'">'+esc(r)+'</option>').join('');
+function updateStoreOptions(){
+  const selectedRegions=new Set(selectedValues(regionSel));
+  const previous=new Set(selectedValues(storeSel));
+  const available=stores2.filter(store=>!selectedRegions.size||selectedRegions.has(STORE_REGION.get(store)));
+  storeSel.innerHTML=available.map(store=>'<option value="'+esc(store)+'"'+(previous.has(store)?' selected':'')+'>'+esc(store)+'</option>').join('');
+}
+updateStoreOptions();
 reportSel.innerHTML='<option value="">全部报告</option>'+reports.map(r=>'<option>'+esc(r)+'</option>').join('');
 channelSel.innerHTML='<option value="">全部渠道</option>'+channels.map(c=>'<option>'+esc(c)+'</option>').join('');
 // 问题点明细 本地筛选（门店 / 报告类型）：仅作用于明细表
@@ -458,9 +461,9 @@ const iStoreSel=document.getElementById('iStore'), iReportSel=document.getElemen
 const gapStatusSel=document.getElementById('gapStatus');
 iStoreSel.innerHTML='<option value="">全部门店</option>'+stores2.map(s=>'<option>'+esc(s)+'</option>').join('');
 iReportSel.innerHTML='<option value="">全部报告类型</option>'+reports.map(r=>'<option>'+esc(r)+'</option>').join('');
-// 统一筛选条件（日期/门店/区域/报告/渠道）：问题点明细、红线、得分矩阵 共用
-function getFilters(){ return {date:dateSel.value, store:storeSel.value, region:regionSel.value, report:reportSel.value, channel:channelSel.value}; }
-function matchFn(r,f){ return (!f.date||r.date===f.date)&&(!f.store||r.store===f.store)&&(!f.region||(r.region||'—')===f.region)&&(!f.report||r.report===f.report)&&(!f.channel||r.channel===f.channel); }
+// 统一筛选条件（门店/区域支持多选；报告/渠道单选）：问题点明细、红线、得分矩阵共用
+function getFilters(){ return {stores:selectedValues(storeSel), regions:selectedValues(regionSel), report:reportSel.value, channel:channelSel.value}; }
+function matchFn(r,f){ return (!f.stores.length||f.stores.includes(r.store))&&(!f.regions.length||f.regions.includes(r.region||'—'))&&(!f.report||r.report===f.report)&&(!f.channel||r.channel===f.channel); }
 pills.innerHTML='<div class=pill><b>'+DATA.stats.reports+'</b>报告</div>'
   +'<div class=pill><b>'+DATA.stats.issues+'</b>问题点</div>'
   +'<div class=pill><b>'+DATA.stats.redline+'</b>红线</div>';
@@ -548,9 +551,9 @@ function rlTableHTML(rows){
   return h+'</tbody></table>';
 }
 function renderMatrix(){
-  // 得分矩阵与顶部全部筛选联动，包括日期；不选日期时显示本月全部得分。
+  // 得分矩阵与顶部筛选联动，显示当前月份数据。
   const f=getFilters();
-  const match=r=>(!f.date||r.date===f.date)&&(!f.store||r.store===f.store)&&(!f.region||(r.region||'—')===f.region)&&(!f.report||r.report===f.report)&&(!f.channel||r.channel===f.channel);
+  const match=r=>matchFn(r,f);
   rlTable.innerHTML=rlTableHTML(DATA.scores.filter(match));
   renderGap();
 }
@@ -642,7 +645,7 @@ function gapGroupedHTML(rows){
 }
 function renderGap(){
   const f=getFilters();
-  const base=(DATA.audit_gap.detail||[]).filter(r=>(!f.store||r.store===f.store)&&(!f.region||(r.region||'—')===f.region));
+  const base=(DATA.audit_gap.detail||[]).filter(r=>(!f.stores.length||f.stores.includes(r.store))&&(!f.regions.length||f.regions.includes(r.region||'—')));
   const offMiss=base.filter(r=>r.off).length, onMiss=base.filter(r=>r.on).length;
   const offOk=base.length-offMiss, onOk=base.length-onMiss;
   document.getElementById('gapSummary').innerHTML='线下已稽核 <b>'+offOk+'</b> 家，未稽核 <b class=miss-num>'+offMiss+'</b> 家；'
@@ -669,12 +672,15 @@ function render(){
   const total=DATA.cards.filter(match).length + rl.length;
   cntEl.textContent='当前筛选：'+total+' 个问题点（含红线 '+rl.length+'）';
 }
-// 所有顶部筛选（日期/门店/区域/报告/渠道）联动 问题点明细/红线 + 得分矩阵
-[storeSel,regionSel,reportSel,channelSel].forEach(s=>s.onchange=()=>{render();renderMatrix();});
-dateSel.onchange=()=>{render();renderMatrix();};
+// 所有顶部筛选联动问题点明细、红线、得分矩阵和覆盖模块
+storeSel.onchange=()=>{render();renderMatrix();};
+regionSel.onchange=()=>{updateStoreOptions();render();renderMatrix();};
+[reportSel,channelSel].forEach(s=>s.onchange=()=>{render();renderMatrix();});
 document.getElementById('fReset').onclick=()=>{
-  dateSel.value='';
-  storeSel.value='';regionSel.value='';reportSel.value='';channelSel.value='';
+  Array.from(regionSel.options).forEach(option=>option.selected=false);
+  updateStoreOptions();
+  Array.from(storeSel.options).forEach(option=>option.selected=false);
+  reportSel.value='';channelSel.value='';
   gapStatusSel.value='';
   render();renderMatrix();
 };

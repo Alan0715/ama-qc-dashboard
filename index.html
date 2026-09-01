@@ -31,7 +31,18 @@
   .filters label{font-size:12px;color:var(--muted);display:block;margin-bottom:3px}
   .filters select{appearance:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;
         padding:8px 12px;font-size:14px;color:var(--ink);min-width:150px;box-shadow:var(--shadow)}
-  .filters select[multiple]{appearance:auto;min-width:180px;height:76px;padding:6px 8px;background-image:none}
+  .multi-filter{position:relative;min-width:190px}
+  .multi-trigger{width:100%;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 34px 8px 12px;
+        font-size:14px;color:var(--ink);box-shadow:var(--shadow);text-align:left;cursor:pointer;position:relative}
+  .multi-trigger:after{content:'⌄';position:absolute;right:12px;top:6px;font-size:18px;color:var(--muted)}
+  .multi-filter.open .multi-trigger:after{content:'⌃'}
+  .multi-menu{display:none;position:absolute;z-index:30;top:calc(100% + 6px);left:0;min-width:100%;max-height:280px;overflow:auto;
+        background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px;box-shadow:0 12px 28px rgba(80,52,34,.18)}
+  .multi-filter.open .multi-menu{display:block}
+  .multi-option{display:flex!important;align-items:center;gap:8px;margin:0!important;padding:7px 8px;border-radius:7px;
+        font-size:14px!important;color:var(--ink)!important;white-space:nowrap;cursor:pointer}
+  .multi-option:hover{background:#F4EBDD}
+  .multi-option input{accent-color:var(--red);margin:0}
   .filters .reset{background:var(--red);color:#fff;border:none;border-radius:10px;padding:9px 16px;
         font-size:14px;cursor:pointer;box-shadow:var(--shadow)}
   .filters .reset:hover{background:var(--red2)}
@@ -197,8 +208,8 @@
 </div></header>
 <div class="wrap">
   <div class="filters">
-    <div><label>区域（可多选）</label><select id="fRegion" multiple aria-label="区域（可多选）"></select></div>
-    <div><label>门店（可多选）</label><select id="fStore" multiple aria-label="门店（可多选）"></select></div>
+    <div><label>区域（可多选）</label><div class="multi-filter" id="fRegion"><button type="button" class="multi-trigger"><span>全部区域</span></button><div class="multi-menu"></div></div></div>
+    <div><label>门店（可多选）</label><div class="multi-filter" id="fStore"><button type="button" class="multi-trigger"><span>全部门店</span></button><div class="multi-menu"></div></div></div>
     <div><label>报告名称</label><select id="fReport"><option value="">全部报告</option><option>【品控】2026年-合规审核表</option><option>【品控】2026年-品质审核表</option><option>【品控】2026年-清洁&amp;服务审核表</option><option>【品控】2026年-线上产品专项稽核表</option><option>【品控】2026年-食安审核表</option></select></div>
     <div><label>渠道</label><select id="fChannel"><option value="">全部渠道</option><option>线上</option><option>线下</option></select></div>
     <button class="reset" id="fReset">重置</button>
@@ -444,14 +455,28 @@ const storeSel=document.getElementById('fStore'), regionSel=document.getElementB
       reportSel=document.getElementById('fReport'), channelSel=document.getElementById('fChannel'),
       board=document.getElementById('board'), redEl=document.getElementById('redline'),
       rlTable=document.getElementById('rlTable'), cntEl=document.getElementById('cnt'), pills=document.getElementById('pills');
-const selectedValues=sel=>Array.from(sel.selectedOptions,option=>option.value).filter(Boolean);
+const selectedValues=control=>Array.from(control.querySelectorAll('input[type="checkbox"]:checked'),input=>input.value);
+function renderMultiLabel(control,emptyLabel){
+  const values=selectedValues(control);
+  control.querySelector('.multi-trigger span').textContent=values.length?(values.length===1?values[0]:'已选择 '+values.length+' 项'):emptyLabel;
+}
+function setMultiOptions(control,values,selected,emptyLabel){
+  control.querySelector('.multi-menu').innerHTML=values.map(value=>'<label class="multi-option"><input type="checkbox" value="'+esc(value)+'"'+(selected.has(value)?' checked':'')+'><span>'+esc(value)+'</span></label>').join('');
+  renderMultiLabel(control,emptyLabel);
+}
+function setupMulti(control){
+  control.querySelector('.multi-trigger').onclick=event=>{ event.stopPropagation(); document.querySelectorAll('.multi-filter.open').forEach(item=>{if(item!==control)item.classList.remove('open');}); control.classList.toggle('open'); };
+  control.querySelector('.multi-menu').onclick=event=>event.stopPropagation();
+}
+setupMulti(regionSel); setupMulti(storeSel);
+document.addEventListener('click',()=>document.querySelectorAll('.multi-filter.open').forEach(item=>item.classList.remove('open')));
 const STORE_REGION=new Map(ORG_STRUCTURE.map(row=>[row.store,row.region]));
-regionSel.innerHTML=regions.map(r=>'<option value="'+esc(r)+'">'+esc(r)+'</option>').join('');
+setMultiOptions(regionSel,regions,new Set(),'全部区域');
 function updateStoreOptions(){
   const selectedRegions=new Set(selectedValues(regionSel));
   const previous=new Set(selectedValues(storeSel));
   const available=stores2.filter(store=>!selectedRegions.size||selectedRegions.has(STORE_REGION.get(store)));
-  storeSel.innerHTML=available.map(store=>'<option value="'+esc(store)+'"'+(previous.has(store)?' selected':'')+'>'+esc(store)+'</option>').join('');
+  setMultiOptions(storeSel,available,previous,'全部门店');
 }
 updateStoreOptions();
 reportSel.innerHTML='<option value="">全部报告</option>'+reports.map(r=>'<option>'+esc(r)+'</option>').join('');
@@ -673,13 +698,15 @@ function render(){
   cntEl.textContent='当前筛选：'+total+' 个问题点（含红线 '+rl.length+'）';
 }
 // 所有顶部筛选联动问题点明细、红线、得分矩阵和覆盖模块
-storeSel.onchange=()=>{render();renderMatrix();};
-regionSel.onchange=()=>{updateStoreOptions();render();renderMatrix();};
+storeSel.onchange=()=>{renderMultiLabel(storeSel,'全部门店');render();renderMatrix();};
+regionSel.onchange=()=>{renderMultiLabel(regionSel,'全部区域');updateStoreOptions();render();renderMatrix();};
 [reportSel,channelSel].forEach(s=>s.onchange=()=>{render();renderMatrix();});
 document.getElementById('fReset').onclick=()=>{
-  Array.from(regionSel.options).forEach(option=>option.selected=false);
+  regionSel.querySelectorAll('input[type="checkbox"]').forEach(input=>input.checked=false);
+  renderMultiLabel(regionSel,'全部区域');
   updateStoreOptions();
-  Array.from(storeSel.options).forEach(option=>option.selected=false);
+  storeSel.querySelectorAll('input[type="checkbox"]').forEach(input=>input.checked=false);
+  renderMultiLabel(storeSel,'全部门店');
   reportSel.value='';channelSel.value='';
   gapStatusSel.value='';
   render();renderMatrix();

@@ -24980,53 +24980,53 @@
   "store_calc": {
     "深圳ONE AVENUE卓悦中心店": {
       "quality": 85.44,
-      "food": 84.62,
+      "food": 83.12,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 85.91
+      "monthly": 85.46
     },
     "深圳金光华店": {
       "quality": 83.5,
-      "food": 84.62,
+      "food": 83.62,
       "compliance": 100,
       "cleaning": 83.65,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 85.52
+      "monthly": 85.22
     },
     "深圳万象食家店": {
       "quality": 81.33,
-      "food": 84.62,
+      "food": 83.12,
       "compliance": 100,
       "cleaning": 83.65,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 84.65
+      "monthly": 84.2
     },
     "深圳天安云谷店": {
       "quality": 82.83,
-      "food": 85.47,
+      "food": 83.97,
       "compliance": 100,
       "cleaning": 82.69,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 85.31
+      "monthly": 84.86
     },
     "深圳仁恒梦中心店": {
       "quality": 81.17,
-      "food": 83.76,
+      "food": 83.26,
       "compliance": 95,
       "cleaning": 81.73,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.44
+      "monthly": 83.29
     },
     "深圳布吉万象汇店": {
       "quality": 80.52,
@@ -25040,63 +25040,63 @@
     },
     "深圳梅林卓悦汇店": {
       "quality": 82.52,
-      "food": 79.62,
+      "food": 78.62,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": true,
-      "monthly": 83.24
+      "monthly": 82.94
     },
     "深圳kkone店": {
       "quality": 80.65,
-      "food": 78.76,
+      "food": 75.26,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 56,
-      "online_food_issues": 0,
+      "online_food_issues": 7,
       "food_redline": true,
-      "monthly": 82.23
+      "monthly": 81.18
     },
     "深圳平安金融中心店": {
       "quality": 82.47,
-      "food": 86.32,
+      "food": 85.32,
       "compliance": 100,
       "cleaning": 82.69,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 85.42
+      "monthly": 85.12
     },
     "深圳万象前海店": {
       "quality": 79.63,
-      "food": 82.91,
+      "food": 80.91,
       "compliance": 100,
       "cleaning": 80.77,
       "online": 56,
-      "online_food_issues": 0,
+      "online_food_issues": 4,
       "food_redline": false,
-      "monthly": 82.88
+      "monthly": 82.28
     },
     "深圳欢乐港湾店": {
       "quality": 82.65,
-      "food": 83.76,
+      "food": 82.76,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 84,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 84.53
+      "monthly": 84.23
     },
     "深圳宝安大仟里店": {
       "quality": 83.16,
-      "food": 87.18,
+      "food": 86.68,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 85.76
+      "monthly": 85.61
     },
     "深圳科兴科学园店": {
       "quality": 84.38,
@@ -25110,13 +25110,13 @@
     },
     "深圳来福士广场店": {
       "quality": 80.65,
-      "food": 87.18,
+      "food": 85.68,
       "compliance": 100,
       "cleaning": 83.65,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 85.14
+      "monthly": 84.69
     },
     "深圳海上世界店": {
       "quality": 80.24,
@@ -25130,123 +25130,123 @@
     },
     "深圳万象天地店·茶歇": {
       "quality": 80.65,
-      "food": 84.62,
+      "food": 83.62,
       "compliance": 100,
       "cleaning": 80.77,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 83.8
+      "monthly": 83.5
     },
     "深圳湾万象城店": {
       "quality": 80.65,
-      "food": 85.47,
+      "food": 84.47,
       "compliance": 95,
       "cleaning": 80.77,
       "online": 76,
-      "online_food_issues": 0,
-      "food_redline": false,
-      "monthly": 83.56
-    },
-    "广州太古汇店": {
-      "quality": 80.47,
-      "food": 83.76,
-      "compliance": 94,
-      "cleaning": 82.69,
-      "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
       "monthly": 83.25
     },
+    "广州太古汇店": {
+      "quality": 80.47,
+      "food": 82.76,
+      "compliance": 94,
+      "cleaning": 82.69,
+      "online": 72,
+      "online_food_issues": 2,
+      "food_redline": false,
+      "monthly": 82.95
+    },
     "广州天环广场店": {
       "quality": 79.63,
-      "food": 86.32,
+      "food": 85.32,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 84.09
+      "monthly": 83.79
     },
     "广州塔广场店": {
       "quality": 83.16,
-      "food": 84.62,
+      "food": 84.12,
       "compliance": 90,
       "cleaning": 80.77,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.8
+      "monthly": 83.65
     },
     "广州天汇广场店": {
       "quality": 81.63,
-      "food": 85.47,
+      "food": 84.47,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 84.64
+      "monthly": 84.34
     },
     "佛山岭南天地店": {
       "quality": 80.65,
-      "food": 82.91,
+      "food": 81.91,
       "compliance": 100,
       "cleaning": 81.73,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 83.48
+      "monthly": 83.18
     },
     "广州永庆坊店·茶肆": {
       "quality": 81.15,
-      "food": 84.62,
+      "food": 84.12,
       "compliance": 100,
       "cleaning": 82.69,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 84.38
+      "monthly": 84.23
     },
     "东莞汇一城店": {
       "quality": 81.63,
-      "food": 84.62,
+      "food": 83.12,
       "compliance": 100,
       "cleaning": 84.62,
       "online": 80,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 84.96
+      "monthly": 84.51
     },
     "东莞记忆店·茶肆": {
       "quality": 80.02,
-      "food": 84.62,
+      "food": 83.12,
       "compliance": 97,
       "cleaning": 84.62,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 84.02
+      "monthly": 83.57
     },
     "广州乐峰广场店": {
       "quality": 79.63,
-      "food": 83.76,
+      "food": 83.26,
       "compliance": 95,
       "cleaning": 82.69,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.02
+      "monthly": 82.87
     },
     "厦门万象城店": {
       "quality": 80.11,
-      "food": 83.76,
+      "food": 82.26,
       "compliance": 96,
       "cleaning": 81.73,
       "online": 68,
-      "online_food_issues": 0,
+      "online_food_issues": 3,
       "food_redline": false,
-      "monthly": 83.12
+      "monthly": 82.67
     },
     "厦门SM新生活广场店·集": {
       "quality": null,
@@ -25254,69 +25254,69 @@
       "compliance": null,
       "cleaning": null,
       "online": 64,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
       "monthly": null
     },
     "深圳宝安壹方城店": {
       "quality": 79.31,
-      "food": 84.62,
+      "food": 84.12,
       "compliance": 100,
       "cleaning": 80.77,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.26
+      "monthly": 83.11
     },
     "深圳怀德万象汇店": {
       "quality": 80.35,
-      "food": 84.62,
+      "food": 84.12,
       "compliance": 100,
       "cleaning": 84.62,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 84.45
+      "monthly": 84.3
     },
     "深圳腾讯总部园区店": {
       "quality": 84.32,
-      "food": 85.47,
+      "food": 84.47,
       "compliance": 100,
       "cleaning": 82.69,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 85.91
+      "monthly": 85.61
     },
     "珠海富华里店": {
       "quality": 80.65,
-      "food": 83.76,
+      "food": 83.26,
       "compliance": 100,
       "cleaning": 82.69,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.93
+      "monthly": 83.78
     },
     "顺德万象汇店": {
       "quality": 80.65,
-      "food": 82.91,
+      "food": 82.41,
       "compliance": 100,
       "cleaning": 83.65,
       "online": 76,
-      "online_food_issues": 0,
+      "online_food_issues": 1,
       "food_redline": false,
-      "monthly": 83.86
+      "monthly": 83.71
     },
     "珠海万象汇店": {
       "quality": 80.98,
-      "food": 86.32,
+      "food": 85.32,
       "compliance": 100,
       "cleaning": 84.62,
       "online": 72,
-      "online_food_issues": 0,
+      "online_food_issues": 2,
       "food_redline": false,
-      "monthly": 85.21
+      "monthly": 84.91
     }
   },
   "org_structure": [

@@ -19,7 +19,7 @@
 <div class="filters"><div><label>区域</label><select id="region"><option value="">全部区域</option></select></div><div><label>门店</label><select id="store"><option value="">全部门店</option></select></div><button id="reset">重置</button></div>
 
 <div class="section">报告汇总</div>
-<div class="panel table-wrap"><table class="report-table"><thead><tr><th>区域</th><th>门店</th><th>线下审核员</th><th>审核日期</th><th>线下报告</th><th>线上审核员</th><th>审核日期</th><th>线上得分</th><th>是否有红线</th><th>线上报告</th></tr></thead><tbody id="reports"></tbody></table></div>
+<div class="panel table-wrap"><table class="report-table"><thead><tr><th>区域</th><th>门店</th><th>线下审核员</th><th>审核日期</th><th>线下报告</th><th>线上审核员</th><th>审核日期</th><th>线上得分</th><th>线上报告</th><th>是否有红线</th></tr></thead><tbody id="reports"></tbody></table></div>
 
 <div class="section">门店稽核覆盖（本月未稽核门店）</div>
 <div class="panel"><div class="coverage-head"><div class="coverage-summary" id="coverageSummary"></div><select id="auditStatus"><option value="">全部状态</option><option value="已稽核">已稽核</option><option value="未稽核">未稽核</option></select></div><div class="table-wrap"><table class="coverage-table"><thead><tr><th>门店</th><th>线下</th><th>线下审核员</th><th>线下审核时间</th><th>线上</th><th>线上审核员</th><th>线上审核时间</th></tr></thead><tbody id="coverage"></tbody></table></div></div>
@@ -46,7 +46,7 @@ function redlineText(store){const rows=DATA.redlines.filter(x=>x.store===store);
 function statusTag(done){return`<span class="status ${done?'done':'miss'}">${done?'已稽核':'未稽核'}</span>`}
 function render(){
  const stores=ORG.filter(x=>(!f.region.value||x.region===f.region.value)&&(!f.store.value||x.store===f.store.value)&&DATA.reports.some(r=>r.store===x.store));
- document.querySelector('#reports').innerHTML=stores.map(x=>{const r=storeReports(x.store),off=r.offline,on=r.online;return`<tr><td data-label="区域">${esc(x.region)}</td><td data-label="门店" class="store">${esc(x.store)}</td><td data-label="线下审核员">${esc(off?.auditor||'—')}</td><td data-label="线下审核日期">${dateShort(off?.date)}</td><td data-label="线下报告">${off?`<a target="_blank" href="${off.report_url}">🔗 查看</a>`:'—'}</td><td data-label="线上审核员">${esc(on?.auditor||'—')}</td><td data-label="线上审核日期">${dateShort(on?.date)}</td><td data-label="线上得分">${on?`<span class="score ${on.score>=80?'good':''}">${on.score}</span>`:'—'}</td><td data-label="是否有红线">${redlineText(x.store)}</td><td data-label="线上报告">${on?`<a target="_blank" href="${on.report_url}">🔗 查看</a>`:'—'}</td></tr>`}).join('')||'<tr><td colspan="10" class="empty">无报告</td></tr>';
+ document.querySelector('#reports').innerHTML=stores.map(x=>{const r=storeReports(x.store),off=r.offline,on=r.online;return`<tr><td data-label="区域">${esc(x.region)}</td><td data-label="门店" class="store">${esc(x.store)}</td><td data-label="线下审核员">${esc(off?.auditor||'—')}</td><td data-label="线下审核日期">${dateShort(off?.date)}</td><td data-label="线下报告">${off?`<a target="_blank" href="${off.report_url}">🔗 查看</a>`:'—'}</td><td data-label="线上审核员">${esc(on?.auditor||'—')}</td><td data-label="线上审核日期">${dateShort(on?.date)}</td><td data-label="线上得分">${on?`<span class="score ${on.score>=80?'good':''}">${on.score}</span>`:'—'}</td><td data-label="线上报告">${on?`<a target="_blank" href="${on.report_url}">🔗 查看</a>`:'—'}</td><td data-label="是否有红线">${redlineText(x.store)}</td></tr>`}).join('')||'<tr><td colspan="10" class="empty">无报告</td></tr>';
  renderCoverage();renderRedlines();renderIssues();
 }
 function renderCoverage(){

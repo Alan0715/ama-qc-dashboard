@@ -1,6 +1,6 @@
 {
   "start": "2026-09-01",
-  "target": "2026-09-08",
+  "target": "2026-09-09",
   "rules": {
     "offline_template": "【品控】食安红线与重点检查表",
     "online_template": "【品控】2026年-线上产品专项稽核表",
@@ -8,10 +8,10 @@
     "show_total_score": false
   },
   "stats": {
-    "reports": 14,
-    "offline_reports": 6,
+    "reports": 18,
+    "offline_reports": 10,
     "online_reports": 8,
-    "issues": 126,
+    "issues": 166,
     "redline": 0
   },
   "reports": [
@@ -68,6 +68,19 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9e776f8c948c802a8ec0e9"
     },
     {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "checked_at": "2026-09-09 13:53",
+      "submitted_at": "2026-09-09 15:20",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
       "report_id": "6a9e734a73031daa1e7563e9",
       "date": "2026-09-07",
       "checked_at": "2026-09-07 14:20",
@@ -79,6 +92,19 @@
       "channel": "线上",
       "score": 66.67,
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9e734a73031daa1e7563e9"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "checked_at": "2026-09-09 15:50",
+      "submitted_at": "2026-09-09 18:08",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
     },
     {
       "report_id": "6a9a4af5a6f01e986ae569a5",
@@ -185,6 +211,19 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9fc316c2b7f8bef989593c"
     },
     {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "checked_at": "2026-09-09 15:10",
+      "submitted_at": "2026-09-09 17:06",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
       "report_id": "6a9fa4edc5a0a6faf00322a3",
       "date": "2026-09-04",
       "checked_at": "2026-09-04 17:15",
@@ -196,6 +235,19 @@
       "channel": "线上",
       "score": 80,
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9fa4edc5a0a6faf00322a3"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "checked_at": "2026-09-09 11:44",
+      "submitted_at": "2026-09-09 13:28",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
     }
   ],
   "issues": [
@@ -728,6 +780,126 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9e776f8c948c802a8ec0e9"
     },
     {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "①后厨墙壁脏污，需加强清洁\n②备料岗位清洁待用的开罐器表面存在脏污，需加强清洁\n③后厨层架上存在食物残渣，需做好随手清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.3 水吧清洁问题",
+      "comment": "①水吧地面脏污，需加强清洁\n②冷冻雪糕车表面存在脏污",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.5 其他清洁问题",
+      "comment": "阿嬷岗位清洁待用的小器具存在食物残渣，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.1 抽查手作半成品口感、风味、状态符合使用标准",
+      "comment": "①龙眼丸子内存在木薯团，中间有白色死面，容易引发客诉，需剔除干净\n②马蹄丸子存在多个裹粉不上，需关注裹粉筛粉标准操作，标准裹粉不均匀",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "龙眼汁内存在黑色果核皮，需剔除干净",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.4 抽查产品份量、口感、风味符合标准",
+      "comment": "①实测酒酿雪糕重量为43.6g，标准应为不低于55g，需加强宣导\n②雪糕机存在未开启情况，导致雪糕融化，需及时关注雪糕机运行状态\n③木瓜丁和马蹄丸子勺子使用25ml量勺，标准应为使用30ml量勺，需加强宣导\n④点单无花果配备3孔细吸管，标准应为配备单孔细吸管，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.1 员工仪容仪表符合公示规定的要求",
+      "comment": "抽查水吧员工衣服上存在毛发，需加强黏毛，避免异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.4 门店效期管理符合要求：先进先出、效期使用等",
+      "comment": "水吧位开封使用的牛乳先进先出未做好，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "①冷水壶手柄存在破损且容易移位导致碎，需及时更换\n②一次性包材袋子破损，未密封保存，容易被污染，需加强密封保存管理\n③阿嬷岗位黑色刮刀表面存在破损毛边，有异物风险，需加强更换",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
+      "report_id": "6aa108a4c132cd7d713e4c19",
+      "date": "2026-09-09",
+      "store": "厦门万象城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.8 其他食安问题",
+      "comment": "过滤水系统精滤压力差超过10psi，标准应为相差不超过10psi，需及时更换精滤",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa108a4c132cd7d713e4c19"
+    },
+    {
       "report_id": "6a9e734a73031daa1e7563e9",
       "date": "2026-09-07",
       "store": "厦门SM新生活广场店·集",
@@ -822,6 +994,114 @@
       "item": "新品手作半成品类操作符合标准",
       "comment": "12:06伙伴制备龙眼丸子，称取糖浆后又称取直饮水，标准直饮水需量取，需加强宣导伙伴直饮水量取标准",
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9e734a73031daa1e7563e9"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "存放干货的容器内壁存在脏污，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "龙眼汁内存在黑色果核皮，需剔除干净，避免引发客诉",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.4 抽查产品份量、口感、风味符合标准",
+      "comment": "①分装的菠萝蜜果肉实测23.5g，标准应为20g±3g，建议分切小块方便伙伴秤取\n②员工制作菠萝蜜冰沙时直接将果肉放进去，标准应为量取对应冰线最后再放进去，避免杯量不足\n③柠檬块内存在果籽，未及时剔除\n④开封使用的米酒原汁底部未摇晃完全融化，需加强宣导，容易导致风味不一\n⑤雪糕机中龙眼参数设置错误。现场已校准",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.1 员工仪容仪表符合公示规定的要求",
+      "comment": "抽查水吧位员工衣服上存在毛发，需加强黏毛",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.3 湿货/干货/包材等包装完整无破损，干爽、无油渍、污渍等，已开封的须包好存放",
+      "comment": "①层架黑糖浆表面存在木薯粉残留，需保持干货表面干净整洁\n②开封的春观音茶叶冷藏存放，标准应为常温储存，现场已校准\n③冷藏冰箱内洗消水果保鲜膜未包裹好，容易被污染，需密封保存",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.4 门店效期管理符合要求：先进先出、效期使用等",
+      "comment": "过滤水系统中杀菌灯未跟进效期标签，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "茶汤内存在茶叶碎渣，需关注过滤后茶汤状态复核",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.7 门店无交叉污染风险：处理过程、保存区域等",
+      "comment": "冷冻冰箱内原汁和非即食冷冻原料存放一起，标准需分开保存，避免交叉污染",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
+    },
+    {
+      "report_id": "6aa1301134c16c2612a06ac6",
+      "date": "2026-09-09",
+      "store": "厦门SM新生活广场店·集",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.8 其他食安问题",
+      "comment": "①医药箱内绑带无外包装标签信息，且裸露放置\n②手机盒9个手机，实际在岗员工11名，未统一收集手机管理",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa1301134c16c2612a06ac6"
     },
     {
       "report_id": "6a9a4af5a6f01e986ae569a5",
@@ -1640,6 +1920,138 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9fc316c2b7f8bef989593c"
     },
     {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.1 客区清洁问题",
+      "comment": "顾客离店后15min未收桌，需要注意进行清洁，避免影响顾客体验",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "水果冰箱胶条脏污，需加强日常清洁\n\n备料泡茶机处冰箱胶条脏污，需加强日常清洁\n\n备料水池下方地板积垢，需加强清洁执行力度\n\n备料物料容器脏污，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.3 水吧清洁问题",
+      "comment": "操作冷井下方地板积垢，需加强日常清洁\n\n打包层架存在积灰，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.5 其他清洁问题",
+      "comment": "风幕机风口存在积灰，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.1 抽查手作半成品口感、风味、状态符合使用标准",
+      "comment": "糯米麻薯存在焦糊状，要注意搅拌时大力搅拌且覆盖完全，避免搅拌不到位出现区域遗漏导致糊锅\n\n龙眼丸子内存在夹生木薯团，需关注筛粉过程和制备后挑拣，避免品质异常",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "无花果泥存在果皮，需校准伙伴制备后检查挑出",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.4 抽查产品份量、口感、风味符合标准",
+      "comment": "门店雪糕车内雪糕半球不成球形，需关注雪糕打取规范\n\n出品的柠檬绿茶内有果籽，存在混入饮品导致变苦发涩情况，需在捶打后检查挑出",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.1 员工仪容仪表符合公示规定的要求",
+      "comment": "伙伴衣物上粘有毛絮，需加强岗前及返岗粘毛操作，避免毛发异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.3 湿货/干货/包材等包装完整无破损，干爽、无油渍、污渍等，已开封的须包好存放",
+      "comment": "蒸汽机层架的一次性包材包装破损，存在异物掉落风险，需加强密封管理\n\n水吧台面开封的牛乳批次为20260904，冰箱内存在的牛乳批次为20260901，需确认物料先进先出使用\n\n出品同时开袋包材使用，未按先进先出使用要求，需校准伙伴用完再开封",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "水吧杯子底部存在毛边，需剔除干净再使用，避免异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
+      "report_id": "6aa121a3a4d982886aa43539",
+      "date": "2026-09-09",
+      "store": "珠海富华里店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.8 其他食安问题",
+      "comment": "公示栏添加剂未及时更新，目前蜜桃系列已下架\n\n小白熊内部长出绿藻，需及时清理干净",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa121a3a4d982886aa43539"
+    },
+    {
       "report_id": "6a9fa4edc5a0a6faf00322a3",
       "date": "2026-09-04",
       "store": "顺德万象汇店",
@@ -1710,6 +2122,126 @@
       "item": "存在违反食安操作条数",
       "comment": "2条",
       "report_url": "https://xundian.alphabets.cn/v2/report/6a9fa4edc5a0a6faf00322a3"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "阿嬷岗电子称存在食物残留，需加强日常清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.5 其他清洁问题",
+      "comment": "洗手池物料暂存盒脏污，需加强日常清洁管理\n\n后厨风幕机风口积灰，需加强清洁确认",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.1 抽查手作半成品口感、风味、状态符合使用标准",
+      "comment": "龙眼丸子内存在较厚木薯团且有褐色果肉未去除干净，需关注筛粉过程和制备后挑拣，避免品质异常\n\n\n芋泥存在大颗芋泥碎，需校准伙伴将芋头碎碾压至可吸食的黄豆粒大小",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.2 抽查茶汤/浆类/奶盖/奶油类半成品口感、风味、状态符合使用标准",
+      "comment": "斯里兰卡鲜奶浆内有迪比克结块，需加强物料开封确认，迪比克结块不可使用",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "龙眼汁存在未打制的果肉，需加强制备后确认，避免品质异常",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.4 抽查产品份量、口感、风味符合标准",
+      "comment": "打.米麻薯灼烧黑糖粉存在明显烧焦发黑情况，需注意酌烧手法，避免烧焦发苦，影响产品风味\n\n雪糕半球不呈完整半球状态存在缺口，需校准伙伴雪糕打取压实操作",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.3 湿货/干货/包材等包装完整无破损，干爽、无油渍、污渍等，已开封的须包好存放",
+      "comment": "打包区层柜一次性包材包装破损，存在异物掉落风险，需加强密封管理",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "阿嬷岗破壁机静音罩密封条存在破损，存在异物脱落风险，需及时更换",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.7 门店无交叉污染风险：处理过程、保存区域等",
+      "comment": "蒸汽岗位封口纸存在污渍，易产生交叉污染风险，需关注一次性包材防护",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
+    },
+    {
+      "report_id": "6aa0ee89b0c09c374e89a244",
+      "date": "2026-09-09",
+      "store": "珠海万象汇店",
+      "region": "华南七区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.8 其他食安问题",
+      "comment": "门店手机暂存盒内手机存放数量与实际上岗人数不符，需加强岗前手机管理检查",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa0ee89b0c09c374e89a244"
     }
   ],
   "redlines": []

@@ -1,6 +1,6 @@
 {
   "start": "2026-09-01",
-  "target": "2026-09-14",
+  "target": "2026-09-15",
   "rules": {
     "offline_template": "【品控】食安红线与重点检查表",
     "online_template": "【品控】2026年-线上产品专项稽核表",
@@ -8,10 +8,10 @@
     "show_total_score": false
   },
   "stats": {
-    "reports": 27,
-    "offline_reports": 18,
+    "reports": 29,
+    "offline_reports": 20,
     "online_reports": 9,
-    "issues": 263,
+    "issues": 282,
     "redline": 1
   },
   "reports": [
@@ -365,6 +365,32 @@
       "channel": "线下",
       "score": null,
       "report_url": "https://xundian.alphabets.cn/v2/report/6aa7bb336e198c02cc6295da"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "checked_at": "2026-09-15 11:05",
+      "submitted_at": "2026-09-15 12:38",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "checked_at": "2026-09-15 14:21",
+      "submitted_at": "2026-09-15 16:06",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "template": "【品控】食安红线与重点检查表",
+      "channel": "线下",
+      "score": null,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
     }
   ],
   "issues": [
@@ -3511,6 +3537,234 @@
       "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
       "comment": "蓝色毛巾存在毛边，需及时剔除，避免异物风险\n浓茉茶汤内存在明显茶叶碎，需关注滤茶器具干净无破损，避免滤茶效果不佳\n水吧冷水壶手柄处破裂且移位，易产生碎屑，造成异物风险，需加强定期检查并更换",
       "report_url": "https://xundian.alphabets.cn/v2/report/6aa7b2fae4131db80b177d6d"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "阿嬷岗位地面存在脏污，需及时清洁，避免滋生虫害",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.3 水吧清洁问题",
+      "comment": "水吧岗位冰箱门框存在脏污，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.5 其他清洁问题",
+      "comment": "雪糕机面板表面存在脏污，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.1 抽查手作半成品口感、风味、状态符合使用标准",
+      "comment": "龙眼果肉内存在褐色果肉未剔除干净，容易产生苦涩味，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "龙眼汁内存在黑色果皮，需剔除干净",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.2 门店设置专用洗手池且正常运行、配置齐全，伙伴洗消程序/要求符合标准",
+      "comment": "抽查水吧位员工衣服上存在毛发，需加强黏毛，避免异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.3 湿货/干货/包材等包装完整无破损，干爽、无油渍、污渍等，已开封的须包好存放",
+      "comment": "①层架上一次性包材袋子存在破损\n②备料岗位冰箱内物料存放堵住出风口，容易影响冰箱制冷，需至少间隔2cm，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.4 门店效期管理符合要求：先进先出、效期使用等",
+      "comment": "开封的茉莉茶叶批次为新批次，未开封为旧批次，未做好先进先出，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "①阿嬷岗位不锈钢桶表面存在标签脱落毛边，需剔除干净，避免异物风险\n②备料岗位黑色刮刀表面存在毛边，需及时更换，避免异物风险\n③出品台蓝色毛巾表面存在线丝，需剔除干净，避免异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8cbab42c27cdea2701864",
+      "date": "2026-09-15",
+      "store": "深圳宝安壹方城店",
+      "region": "华南三区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.6 虫害防制设备正常运行且维护良好，门店无明显结构漏洞",
+      "comment": "出品台一次性包材袋子上存在一只飞蛾外来飞虫，需及时关注外围入侵飞虫情况，发现时及时捕捉并做好随手清洁消毒",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8cbab42c27cdea2701864"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.2 后厨清洁问题",
+      "comment": "①水果岗位层架和柜子存在脏污，需加强清洁\n②水果岗位小器具表面存在脏污，需加强清洁\n③备料岗位层架电子秤表面存在食物残渣，需加强清洁\n④阿嬷岗位冷水壶表面存在脏污，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "卫生清洁",
+      "item": "C1.5 其他清洁问题",
+      "comment": "①存放食品添加剂的容器内壁存在食物残渣，需加强清洁\n②冷冻冰箱门框表面存在积灰，需加强清洁",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.3 抽查水果类/糖渍水果半成品，颜色、气味、形状规格、状态符合使用标准",
+      "comment": "①水吧岗位鲜榨龙眼汁表面存在果核皮碎渣，未剔除干净，需加强宣导\n②猕猴桃分切存在过大，标准应为3*3cm，方便伙伴秤取，需加强宣导\n③西瓜块表面存在黄筋，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "产品重点",
+      "item": "Q1.4 抽查产品份量、口感、风味符合标准",
+      "comment": "①点单冷热饮存在一起打包，容易导致热饮降温，冷饮升温，需分开打包\n②点单菠萝蜜外带存在菠萝蜜果肉未单独分装打包，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.1 员工仪容仪表符合公示规定的要求",
+      "comment": "抽查员工衣服上存在毛发，需加强黏毛，避免异物风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.3 湿货/干货/包材等包装完整无破损，干爽、无油渍、污渍等，已开封的须包好存放",
+      "comment": "层架上一次性包材袋子存在破损，需密封保存，避免被污染",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.4 门店效期管理符合要求：先进先出、效期使用等",
+      "comment": "冷冻冰箱内未解冻的柠檬汁批次为旧批次，解冻的为新批次，未做好先进先出",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.5 门店无潜在异物风险：工器具/容器/设备破损、其他异物带入风险等",
+      "comment": "冷藏冰箱内冷水壶盖子手柄处存在破损，需及时更换，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
+    },
+    {
+      "report_id": "6aa8fc88b91bbca295c44846",
+      "date": "2026-09-15",
+      "store": "深圳宝安大仟里店",
+      "region": "华南四区",
+      "auditor": "黄育彦",
+      "channel": "线下",
+      "category": "食安重点",
+      "item": "S1.8 其他食安问题",
+      "comment": "①消毒器具未跟进消毒标签和计时，标准需跟进消毒标签并及时10min\n②点单外卖存放在水吧传递窗，容易和饮品交叉污染，需独立存放",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa8fc88b91bbca295c44846"
     }
   ],
   "redlines": [

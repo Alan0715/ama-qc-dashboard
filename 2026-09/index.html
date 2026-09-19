@@ -15,7 +15,9 @@
 <style>
 .issues{min-width:820px}.issues th:nth-child(1){width:10%}.issues th:nth-child(2){width:17%}.issues th:nth-child(3){width:14%}.issues th:nth-child(4){width:13%}.issues th:nth-child(5){width:46%}
 .tag.redline-tag{background:#f7e4e1;color:var(--red);font-weight:800}
+.performance-note{padding:12px 14px;border-bottom:1px solid var(--line);background:#fffaf0;color:#6c5948;font-size:12px;line-height:1.7}.performance-note b{color:var(--red)}.performance-table{table-layout:fixed;min-width:1040px}.performance-table th:nth-child(1){width:9%}.performance-table th:nth-child(2){width:18%}.performance-table th:nth-child(3){width:10%}.performance-table th:nth-child(4){width:10%}.performance-table th:nth-child(5),.performance-table th:nth-child(7){width:13%}.performance-table th:nth-child(6),.performance-table th:nth-child(8){width:13.5%}.performance-score{font-weight:800;color:#8d631d}.bsc-score{display:inline-block;min-width:34px;padding:3px 8px;border-radius:8px;background:#eaf0de;color:var(--matcha);font-weight:800}.pending{color:var(--muted)}
 @media(max-width:640px){.issues{min-width:0}.issues th:nth-child(1){width:12%}.issues th:nth-child(2){width:19%}.issues th:nth-child(3){width:14%}.issues th:nth-child(4){width:15%}.issues th:nth-child(5){width:40%}.issues .tag{padding:1px 3px;font-size:8px;white-space:normal}}
+@media(max-width:640px){.performance-note{padding:9px 10px;font-size:10px}.performance-table{width:100%!important;min-width:0!important;table-layout:fixed!important}.performance-table th{position:static;padding:5px 1px;font-size:7px;line-height:1.2;white-space:normal;word-break:break-all}.performance-table td{padding:6px 1px;font-size:7px;line-height:1.25;white-space:normal;word-break:break-word}.performance-table th:nth-child(1){width:10%}.performance-table th:nth-child(2){width:20%}.performance-table th:nth-child(3),.performance-table th:nth-child(4){width:10%}.performance-table th:nth-child(5),.performance-table th:nth-child(6),.performance-table th:nth-child(7),.performance-table th:nth-child(8){width:12.5%}.performance-table .score,.performance-table .bsc-score{min-width:0;padding:2px 3px;font-size:7px}}
 </style>
 </head>
 <body><div class="wrap">
@@ -25,6 +27,9 @@
 
 <div class="section">报告汇总</div>
 <div class="panel table-wrap"><table class="report-table"><thead><tr><th>区域</th><th>门店</th><th>线下审核员</th><th>审核日期</th><th>线下报告</th><th>线上审核员</th><th>审核日期</th><th>线上得分</th><th>线上报告</th><th>是否有红线</th></tr></thead><tbody id="reports"></tbody></table></div>
+
+<div class="section">绩效成绩（2026年9月临时规则）</div>
+<div class="panel"><div class="performance-note"><b>计分口径：</b>线上专项分 X 对应扣 0—5 分；营业额≤125万元时基础分为85分，营业额&gt;125万元时基础分为84分；产品品质分 P＝基础分－线上专项扣分。因当前数据不含门店9月营业额档位，以下同时呈现两种情形，不替门店推定档位。BSC仅展示图片规则对应的指标分，未合并其他审核项或最终绩效评级。</div><div class="table-wrap"><table class="performance-table"><thead><tr><th>区域</th><th>门店</th><th>线上专项 X</th><th>专项扣分</th><th>≤125万<br>品质 P</th><th>≤125万<br>BSC指标分</th><th>&gt;125万<br>品质 P</th><th>&gt;125万<br>BSC指标分</th></tr></thead><tbody id="performance"></tbody></table></div></div>
 
 <div class="section">门店稽核覆盖（本月未稽核门店）</div>
 <div class="panel"><div class="coverage-head"><div class="coverage-summary" id="coverageSummary"></div><select id="auditStatus"><option value="">全部状态</option><option value="已稽核">已稽核</option><option value="未稽核">未稽核</option></select></div><div class="table-wrap"><table class="coverage-table"><thead><tr><th>门店</th><th>线下</th><th>线下审核员</th><th>线下审核时间</th><th>线上</th><th>线上审核员</th><th>线上审核时间</th></tr></thead><tbody id="coverage"></tbody></table></div></div>
@@ -51,10 +56,16 @@ function dateShort(x){return x?x.slice(5,10):'—'}
 function storeReports(store){const list=DATA.reports.filter(x=>x.store===store).sort((a,b)=>a.checked_at.localeCompare(b.checked_at));return{offline:list.find(x=>x.channel==='线下'),online:list.find(x=>x.channel==='线上')}}
 function redlineText(store){const rows=DATA.redlines.filter(x=>x.store===store);if(!rows.length)return'否';const channels=unique(rows.map(x=>x.channel));return'是/'+channels.join('、')}
 function statusTag(done){return`<span class="status ${done?'done':'miss'}">${done?'已稽核':'未稽核'}</span>`}
+function onlineDeduction(x){if(x>=80)return 0;if(x>=76)return 1;if(x>=72)return 2;if(x>=68)return 3;if(x>=55)return 4;return 5}
+function bscScore(p,lowRevenue){if(lowRevenue){if(p>84.5)return 5;if(p>83.5)return 4;if(p>82.5)return 3;if(p>81.5)return 2;return 1}if(p>83.5)return 5;if(p>82.5)return 4;if(p>81.5)return 3;if(p>81)return 2;return 1}
 function render(){
  const stores=ORG.filter(x=>(!f.region.value||x.region===f.region.value)&&(!f.store.value||x.store===f.store.value)&&DATA.reports.some(r=>r.store===x.store));
  document.querySelector('#reports').innerHTML=stores.map(x=>{const r=storeReports(x.store),off=r.offline,on=r.online;return`<tr><td data-label="区域">${esc(x.region)}</td><td data-label="门店" class="store">${esc(x.store)}</td><td data-label="线下审核员">${esc(off?.auditor||'—')}</td><td data-label="线下审核日期">${dateShort(off?.date)}</td><td data-label="线下报告">${off?`<a target="_blank" href="${off.report_url}">🔗 查看</a>`:'—'}</td><td data-label="线上审核员">${esc(on?.auditor||'—')}</td><td data-label="线上审核日期">${dateShort(on?.date)}</td><td data-label="线上得分">${on?`<span class="score ${on.score>=80?'good':''}">${on.score}</span>`:'—'}</td><td data-label="线上报告">${on?`<a target="_blank" href="${on.report_url}">🔗 查看</a>`:'—'}</td><td data-label="是否有红线">${redlineText(x.store)}</td></tr>`}).join('')||'<tr><td colspan="10" class="empty">无报告</td></tr>';
- renderCoverage();renderRedlines();renderIssues();
+ renderPerformance();renderCoverage();renderRedlines();renderIssues();
+}
+function renderPerformance(){
+ const rows=ORG.filter(x=>(!f.region.value||x.region===f.region.value)&&(!f.store.value||x.store===f.store.value)).map(x=>({...x,online:storeReports(x.store).online}));
+ document.querySelector('#performance').innerHTML=rows.map(x=>{if(!x.online)return`<tr><td>${esc(x.region)}</td><td class="store">${esc(x.store)}</td><td class="pending">未稽核</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>`;const score=Number(x.online.score),deduction=onlineDeduction(score),lowP=85-deduction,highP=84-deduction;return`<tr><td>${esc(x.region)}</td><td class="store">${esc(x.store)}</td><td><span class="score ${score>=80?'good':''}">${score}</span></td><td>${deduction}分</td><td class="performance-score">${lowP}</td><td><span class="bsc-score">${bscScore(lowP,true)}</span></td><td class="performance-score">${highP}</td><td><span class="bsc-score">${bscScore(highP,false)}</span></td></tr>`}).join('');
 }
 function renderCoverage(){
  const rows=ORG.map(x=>{const r=storeReports(x.store);return{...x,offline:r.offline,online:r.online,status:r.offline&&r.online?'已稽核':'未稽核'}}).filter(x=>(!f.region.value||x.region===f.region.value)&&(!f.store.value||x.store===f.store.value)&&(!auditStatus.value||x.status===auditStatus.value));

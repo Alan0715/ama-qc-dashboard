@@ -12,7 +12,7 @@
     "offline_reports": 24,
     "online_reports": 10,
     "issues": 326,
-    "redline": 1
+    "redline": 2
   },
   "reports": [
     {
@@ -4346,18 +4346,6 @@
       "item": "C1.3 水吧清洁问题",
       "comment": "蒸汽岗加热棒存在奶垢，需加强清洁",
       "report_url": "https://xundian.alphabets.cn/v2/report/6aacbfbbfbfee38c21614b10"
-    },
-    {
-      "report_id": "6aacbfbbfbfee38c21614b10",
-      "date": "2026-09-18",
-      "store": "东莞记忆店·茶肆",
-      "region": "华南六区",
-      "auditor": "林舒漫",
-      "channel": "线下",
-      "category": "食安重点",
-      "item": "⭐冰块内无非食品异物，储冰槽和制冰机内不能出现发霉或红色霉菌代谢物",
-      "comment": "制冰机内存在霉菌红色代谢物，需校准伙伴制冰机清洁标准，避免清洁遗漏（已现场与店长确认）",
-      "report_url": "https://xundian.alphabets.cn/v2/report/6aacbfbbfbfee38c21614b10"
     }
   ],
   "redlines": [
@@ -4372,6 +4360,18 @@
       "item": "⭐食安红线",
       "comment": "16:55伙伴从冰箱内取出太妃蜜薯奶盖废弃效期后，额外打印台面使用效期张贴；通过查询效期后台系统，发现该物料加工备用效期于17:08到期，经伙伴更换效期后，该物料于20:55到期，存在篡改临期物料效期，人为延长物料使用时长，存在食品变质和变味风险，需加强宣导伙伴效期使用管理要求",
       "report_url": "https://xundian.alphabets.cn/v2/report/6aa3dc01c528fd27494f3128"
+    },
+    {
+      "report_id": "6aacbfbbfbfee38c21614b10",
+      "date": "2026-09-18",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "林舒漫",
+      "channel": "线下",
+      "category": "食安红线",
+      "item": "⭐冰块内无非食品异物，储冰槽和制冰机内不能出现发霉或红色霉菌代谢物",
+      "comment": "制冰机内存在霉菌红色代谢物，需校准伙伴制冰机清洁标准，避免清洁遗漏（已现场与店长确认）",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aacbfbbfbfee38c21614b10"
     }
   ]
 }

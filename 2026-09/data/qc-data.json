@@ -1,6 +1,6 @@
 {
   "start": "2026-09-01",
-  "target": "2026-09-18",
+  "target": "2026-09-20",
   "rules": {
     "offline_template": "【品控】食安红线与重点检查表",
     "online_template": "【品控】2026年-线上产品专项稽核表",
@@ -8,10 +8,10 @@
     "show_total_score": false
   },
   "stats": {
-    "reports": 34,
+    "reports": 36,
     "offline_reports": 24,
-    "online_reports": 10,
-    "issues": 326,
+    "online_reports": 12,
+    "issues": 339,
     "redline": 2
   },
   "reports": [
@@ -456,6 +456,32 @@
       "channel": "线下",
       "score": null,
       "report_url": "https://xundian.alphabets.cn/v2/report/6aad0c7f85e537c76aebb8aa"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "checked_at": "2026-09-20 11:30",
+      "submitted_at": "2026-09-20 14:29",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "template": "【品控】2026年-线上产品专项稽核表",
+      "channel": "线上",
+      "score": 76.67,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "checked_at": "2026-09-20 17:45",
+      "submitted_at": "2026-09-20 19:44",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "template": "【品控】2026年-线上产品专项稽核表",
+      "channel": "线上",
+      "score": 80,
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
     }
   ],
   "issues": [
@@ -4346,6 +4372,162 @@
       "item": "C1.3 水吧清洁问题",
       "comment": "蒸汽岗加热棒存在奶垢，需加强清洁",
       "report_url": "https://xundian.alphabets.cn/v2/report/6aacbfbbfbfee38c21614b10"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "【椰奶雪糕浆】：加热动作符合标准",
+      "comment": "08：09员工加热椰奶雪糕浆时未持续搅拌至对应温度后转档，容易导致雪糕浆受热不均匀，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "【椰奶雪糕浆】：打凉动作符合标准",
+      "comment": "08：18员工打凉椰奶雪糕浆时未按照标准配备1：1冰水进行打凉，冰块过多导致接触面仅底部一层，无法快速进行降温，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "【糯米麻薯】：离火搅拌动作符合标准",
+      "comment": "09：54员工离火搅拌时搅拌20s且使用太极手法进行搅拌，标准不可使用太极手法进行搅拌且需搅拌至对应时间，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "其他半成品存在违反操作的行为",
+      "comment": "①08：04员工加热牛乳雪糕浆时未持续搅拌至对应温度，容易导致雪糕浆受热不均匀，需加强宣导 ②08：10员工打凉牛乳雪糕浆时使用热水加进去冰块中，标准应为使用1：1冰水混合物进行快速打凉，需加强宣导 ③08：38：20开始清洗芋头，08：38：50清洗完成，期间仅清洗30s，标准应为水没过芋头5cm后才开始计时1min，需加强宣导 ④08：37员工清洗好芋头常温放置，08：41才进锅蒸煮，间隔超过3分钟，标准应为不超过3min，避免芋头常温解冻淀粉流失，导致香气不足，宣导员工提高效率（现场仅备1份熟糯米） ⑤09：12蒸煮熟糯米已计时结束，未第一时间进行出锅打凉，容易导致熟糯米持续高温导致偏软，需加强宣导 ⑥打凉熟糯米的冰水未按照标准进行1：1配备，冰块过多接触面仅底部一层，无法快速降温，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "存在违反食安操作条数",
+      "comment": "1条",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aaf7d61619a9e6f732c5958",
+      "date": "2026-09-20",
+      "store": "东莞记忆店·茶肆",
+      "region": "华南六区",
+      "auditor": "黄育彦",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "其他存在违反食安操作的行为",
+      "comment": "08：18员工使用冰铲转运冰块到操作台进行添加冰块，标准运冰铲不可以用于转运冰块，避免过程存在交叉污染，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aaf7d61619a9e6f732c5958"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "其他半成品存在违反操作的行为",
+      "comment": "8:06制备1份抹茶雪糕浆，牛乳实际称取306.3g标准应为300±3g，需注意原料标准应用 9:46 伙伴洗消无花果后未进行试吃，标准为无花果洗消后需先切一个无花果试吃确认无盐水味，避免盐水味残留，需校准伙伴无花果洗消操作标准",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "底料打取操作符合标准",
+      "comment": "16:01黑糖珍珠（纯）称取103.7g，标准为120±5g，需注意底料标准应用，避免重量不准确",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "冰沙产品操作符合标准",
+      "comment": "16:22 制作饮品，加冰块时未平视确认冰线，存在冰线异常、饮品风味不佳情况，需校准伙伴平视确认操作",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "热饮产品操作符合标准",
+      "comment": "16:02、16:08 蒸汽机未在使用前后进行空喷操作拭，会造成蒸汽棒中残留的冷水或残留奶浆等进入待加热液体中，存在风味偏淡及串味风险",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "新品产品操作符合标准",
+      "comment": "16:07西瓜马蹄椰.冰沙版西瓜块称取156.9g，标准为150±5g，需注意底料标准应用",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "存在违反食安操作条数",
+      "comment": "1条",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
+    },
+    {
+      "report_id": "6aafc718f36674e17eb8311a",
+      "date": "2026-09-20",
+      "store": "深圳腾讯总部园区店",
+      "region": "华南三区",
+      "auditor": "林舒漫",
+      "channel": "线上",
+      "category": "线上产品",
+      "item": "其他存在违反食安操作的行为",
+      "comment": "8:25 伙伴称取抹茶粉时，将多余物料勺回原包装中，存在交叉污染的风险，需加强宣导",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aafc718f36674e17eb8311a"
     }
   ],
   "redlines": [

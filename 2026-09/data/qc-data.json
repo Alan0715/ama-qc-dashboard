@@ -12,7 +12,7 @@
     "offline_reports": 29,
     "online_reports": 19,
     "issues": 444,
-    "redline": 2
+    "redline": 1
   },
   "reports": [
     {
@@ -3282,6 +3282,18 @@
       "report_url": "https://xundian.alphabets.cn/v2/report/6aa3dc01c528fd27494f3128"
     },
     {
+      "report_id": "6aa3dc01c528fd27494f3128",
+      "date": "2026-09-11",
+      "store": "深圳kkone店",
+      "region": "华南二区",
+      "auditor": "黄谭莉",
+      "channel": "线上",
+      "category": "申诉记录",
+      "item": "食安红线申诉成功（仅记录）",
+      "comment": "申诉成功，仅作为记录，不纳入食安红线及扣分统计。原记录：16:55伙伴从冰箱内取出太妃蜜薯奶盖废弃效期后，额外打印台面使用效期张贴；通过查询效期后台系统，发现该物料加工备用效期于17:08到期，经伙伴更换效期后，该物料于20:55到期，存在篡改临期物料效期，人为延长物料使用时长，存在食品变质和变味风险，需加强宣导伙伴效期使用管理要求",
+      "report_url": "https://xundian.alphabets.cn/v2/report/6aa3dc01c528fd27494f3128"
+    },
+    {
       "report_id": "6aa773b1306fb1330c6e13ae",
       "date": "2026-09-14",
       "store": "深圳万象天地店·茶歇",
@@ -5947,18 +5959,6 @@
     }
   ],
   "redlines": [
-    {
-      "report_id": "6aa3dc01c528fd27494f3128",
-      "date": "2026-09-11",
-      "store": "深圳kkone店",
-      "region": "华南二区",
-      "auditor": "黄谭莉",
-      "channel": "线上",
-      "category": "线上产品",
-      "item": "⭐食安红线",
-      "comment": "16:55伙伴从冰箱内取出太妃蜜薯奶盖废弃效期后，额外打印台面使用效期张贴；通过查询效期后台系统，发现该物料加工备用效期于17:08到期，经伙伴更换效期后，该物料于20:55到期，存在篡改临期物料效期，人为延长物料使用时长，存在食品变质和变味风险，需加强宣导伙伴效期使用管理要求",
-      "report_url": "https://xundian.alphabets.cn/v2/report/6aa3dc01c528fd27494f3128"
-    },
     {
       "report_id": "6aacbfbbfbfee38c21614b10",
       "date": "2026-09-18",
